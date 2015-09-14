@@ -1,0 +1,24 @@
+{
+    "status": {
+        "code": "200",
+        "msg": "ok",
+        "stackTrace": null
+    },
+    "dbTimeCost": 30,
+    "totalTimeCost": 101,
+    "hasmore": true,
+    "count": 1,
+    "result": [
+        {
+            "_type": "EC2Instance",
+            "_oid": "aaaaaa",
+            "label": "parallec.github.io"
+        }
+    ],
+    
+    "next": {
+    "method": "GET",
+    "url": "/repositories/cmsdb/branches/main/query/sample_cms_query_results_multi_page_2.json"
+    }
+
+}
