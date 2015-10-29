@@ -1,0 +1,65 @@
+/* Theme Name: The Project - Responsive Website Template
+Author:HtmlCoder
+Author URI:http://www.htmlcoder.me
+Author e-mail:htmlcoder.me@gmail.com
+Version:1.1.0
+Created:December 2014
+License URI:http://support.wrapbootstrap.com/
+File Description: Place here your custom CSS styles
+*/
+
+.logo-font {
+  font-family: 'Raleway', sans-serif;
+}
+
+.fullscreen-bg {
+  background: url("../images/parallec-intro-banner.jpg") 50% 0px no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.background-img-7 {
+  background: url("../images/parallec-background-img-7.jpg") 50% 0px no-repeat;
+}
+
+#retweet_button {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 100px;
+    -webkit-filter: grayscale(1) contrast(1.3);
+    z-index: 3;
+}
+#retweet_button:hover {
+    -webkit-filter: none;
+}
+#github_stars {
+    position: fixed;
+    bottom: 30px;
+    left: 130px;
+    width: 100px;
+    -webkit-filter: grayscale(1) contrast(1.3);
+    z-index: 3;
+}
+#github_stars:hover {
+    -webkit-filter: none;
+}
+.hn-share-button-wrapper {
+    position: fixed;
+    bottom: 29px;
+    left: 227px;
+    -webkit-filter: grayscale(1) contrast(1.3);
+    z-index: 3;
+}
+.hn-share-button-wrapper:hover {
+    -webkit-filter: none;
+}
+
+
