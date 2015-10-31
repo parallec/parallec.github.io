@@ -1,0 +1,3611 @@
+{
+  "submitTime": "2015.10.27.22.24.06.865-0700",
+  "executeStartTime": "2015.10.27.22.24.06.866-0700",
+  "executionEndTime": "2015.10.27.22.24.08.892-0700",
+  "durationSec": 2.026,
+  "requestNum": 97,
+  "requestNumActual": 97,
+  "responsedNum": 97,
+  "taskErrorMetas": [
+    {
+      "type": "COMMAND_MANAGER_ERROR",
+      "errorTime": "2015.10.27.22.24.08.892-0700",
+      "details": "ExecutionManager: task was canceled by user"
+    }
+  ],
+  "responseContext": {},
+  "state": "COMPLETED_WITH_ERROR",
+  "taskId": "PT_97_20151027222406857_6ee2a8e6-bf4",
+  "parallelTaskResult": {
+    "www.ebay.de": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.883-0700"
+      },
+      "hostName": "www.ebay.de",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.ebay.de",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.874-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1896,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.google.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.872-0700"
+      },
+      "hostName": "www.google.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.google.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.871-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1953,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.cnn.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.881-0700"
+      },
+      "hostName": "www.cnn.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.cnn.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.873-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1907,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.fc2.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.873-0700"
+      },
+      "hostName": "www.fc2.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.fc2.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.871-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1950,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.babylon.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.869-0700"
+      },
+      "hostName": "www.babylon.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.babylon.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.871-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1974,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.yahoo.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.887-0700"
+      },
+      "hostName": "www.yahoo.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.yahoo.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.875-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1870,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.ebay.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.878-0700"
+      },
+      "hostName": "www.ebay.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.ebay.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.873-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1920,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.mail.ru": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.875-0700"
+      },
+      "hostName": "www.mail.ru",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.mail.ru",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.872-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1938,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.forbes.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.886-0700"
+      },
+      "hostName": "www.forbes.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.forbes.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.875-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1875,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.aol.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.874-0700"
+      },
+      "hostName": "www.aol.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.aol.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.872-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1943,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.google.com.mx": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.887-0700"
+      },
+      "hostName": "www.google.com.mx",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.google.com.mx",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.875-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1872,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.about.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.879-0700"
+      },
+      "hostName": "www.about.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.about.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.873-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1919,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.dropbox.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.877-0700"
+      },
+      "hostName": "www.dropbox.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.dropbox.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.872-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1929,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.amazon.co.uk": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.871-0700"
+      },
+      "hostName": "www.amazon.co.uk",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.amazon.co.uk",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.871-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1963,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.themeforest.net": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.870-0700"
+      },
+      "hostName": "www.themeforest.net",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.themeforest.net",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.871-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1968,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.youtube.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.879-0700"
+      },
+      "hostName": "www.youtube.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.youtube.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.873-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1915,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.stackoverflow.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.873-0700"
+      },
+      "hostName": "www.stackoverflow.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.stackoverflow.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.872-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1950,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.conduit.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.869-0700"
+      },
+      "hostName": "www.conduit.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.conduit.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.871-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1972,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.google.co.in": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.880-0700"
+      },
+      "hostName": "www.google.co.in",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.google.co.in",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.873-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1912,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.livedoor.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.875-0700"
+      },
+      "hostName": "www.livedoor.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.livedoor.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.872-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1940,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.twitter.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.872-0700"
+      },
+      "hostName": "www.twitter.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.twitter.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "2015.10.27.22.24.07.769-0700",
+        "receiveTimeInManager": "2015.10.27.22.24.07.769-0700",
+        "error": false,
+        "statusCode": "301 Moved Permanently",
+        "statusCodeInt": 301,
+        "operationTimeMillis": 852,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.google.ru": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.877-0700"
+      },
+      "hostName": "www.google.ru",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.google.ru",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.872-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1928,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.blogspot.in": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.873-0700"
+      },
+      "hostName": "www.blogspot.in",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.blogspot.in",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.871-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1952,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.msn.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.869-0700"
+      },
+      "hostName": "www.msn.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.msn.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.871-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1973,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.google.de": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.874-0700"
+      },
+      "hostName": "www.google.de",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.google.de",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.872-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1945,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.espn.go.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.876-0700"
+      },
+      "hostName": "www.espn.go.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.espn.go.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.872-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1933,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.live.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.885-0700"
+      },
+      "hostName": "www.live.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.live.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.874-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1884,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.mywebsearch.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.876-0700"
+      },
+      "hostName": "www.mywebsearch.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.mywebsearch.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.872-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1930,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.google.co.id": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.883-0700"
+      },
+      "hostName": "www.google.co.id",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.google.co.id",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.874-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1897,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.google.ca": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.872-0700"
+      },
+      "hostName": "www.google.ca",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.google.ca",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.871-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1958,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.google.fr": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.884-0700"
+      },
+      "hostName": "www.google.fr",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.google.fr",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "2015.10.27.22.24.08.555-0700",
+        "receiveTimeInManager": "2015.10.27.22.24.08.555-0700",
+        "error": false,
+        "statusCode": "200 OK",
+        "statusCodeInt": 200,
+        "operationTimeMillis": 1569,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.ameblo.jp": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.884-0700"
+      },
+      "hostName": "www.ameblo.jp",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.ameblo.jp",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.874-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1891,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.microsoft.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.878-0700"
+      },
+      "hostName": "www.microsoft.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.microsoft.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.873-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1922,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.dailymail.co.uk": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.872-0700"
+      },
+      "hostName": "www.dailymail.co.uk",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.dailymail.co.uk",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.871-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1955,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.instagram.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.882-0700"
+      },
+      "hostName": "www.instagram.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.instagram.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.874-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1901,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.linkedin.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.882-0700"
+      },
+      "hostName": "www.linkedin.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.linkedin.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.874-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1903,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.google.it": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.882-0700"
+      },
+      "hostName": "www.google.it",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.google.it",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.874-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1904,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.imdb.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.872-0700"
+      },
+      "hostName": "www.imdb.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.imdb.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.871-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1956,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.yandex.ru": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.868-0700"
+      },
+      "hostName": "www.yandex.ru",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.yandex.ru",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.870-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1979,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.google.co.uk": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.868-0700"
+      },
+      "hostName": "www.google.co.uk",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.google.co.uk",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.870-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1976,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.google.com.au": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.873-0700"
+      },
+      "hostName": "www.google.com.au",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.google.com.au",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.872-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1947,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.weather.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.874-0700"
+      },
+      "hostName": "www.weather.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.weather.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.872-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1941,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.zedo.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.881-0700"
+      },
+      "hostName": "www.zedo.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.zedo.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.873-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1909,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.booking.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.874-0700"
+      },
+      "hostName": "www.booking.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.booking.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.872-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1942,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.google.com.hk": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.877-0700"
+      },
+      "hostName": "www.google.com.hk",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.google.com.hk",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.873-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1926,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.amazon.co.jp": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.874-0700"
+      },
+      "hostName": "www.amazon.co.jp",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.amazon.co.jp",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.872-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1946,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.google.co.jp": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.876-0700"
+      },
+      "hostName": "www.google.co.jp",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.google.co.jp",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.872-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1934,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.amazon.de": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.885-0700"
+      },
+      "hostName": "www.amazon.de",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.amazon.de",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.874-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1885,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.tumblr.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.873-0700"
+      },
+      "hostName": "www.tumblr.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.tumblr.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.872-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1948,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.weibo.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.878-0700"
+      },
+      "hostName": "www.weibo.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.weibo.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.873-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1921,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.deviantart.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.876-0700"
+      },
+      "hostName": "www.deviantart.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.deviantart.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.872-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1932,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.yahoo.co.jp": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.879-0700"
+      },
+      "hostName": "www.yahoo.co.jp",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.yahoo.co.jp",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.873-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1918,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.apple.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.886-0700"
+      },
+      "hostName": "www.apple.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.apple.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.875-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1880,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.baidu.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.886-0700"
+      },
+      "hostName": "www.baidu.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.baidu.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.875-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1879,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.bing.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.877-0700"
+      },
+      "hostName": "www.bing.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.bing.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.872-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1926,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.odnoklassniki.ru": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.871-0700"
+      },
+      "hostName": "www.odnoklassniki.ru",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.odnoklassniki.ru",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.871-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1961,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.slideshare.net": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.877-0700"
+      },
+      "hostName": "www.slideshare.net",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.slideshare.net",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.873-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1925,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.imgur.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.875-0700"
+      },
+      "hostName": "www.imgur.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.imgur.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.872-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1939,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.qq.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.871-0700"
+      },
+      "hostName": "www.qq.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.qq.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.871-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1960,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.dailymotion.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.883-0700"
+      },
+      "hostName": "www.dailymotion.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.dailymotion.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.874-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1898,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.wikihow.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.886-0700"
+      },
+      "hostName": "www.wikihow.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.wikihow.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.875-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1881,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.walmart.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.887-0700"
+      },
+      "hostName": "www.walmart.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.walmart.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.875-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1873,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.uol.com.br": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.869-0700"
+      },
+      "hostName": "www.uol.com.br",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.uol.com.br",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.871-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1975,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.PayPal.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.873-0700"
+      },
+      "hostName": "www.PayPal.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.PayPal.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.872-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1949,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.vk.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.882-0700"
+      },
+      "hostName": "www.vk.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.vk.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "2015.10.27.22.24.08.324-0700",
+        "receiveTimeInManager": "2015.10.27.22.24.08.324-0700",
+        "error": false,
+        "statusCode": "302 Found",
+        "statusCodeInt": 302,
+        "operationTimeMillis": 1350,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.tmall.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.868-0700"
+      },
+      "hostName": "www.tmall.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.tmall.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.870-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1978,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.ebay.co.uk": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.885-0700"
+      },
+      "hostName": "www.ebay.co.uk",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.ebay.co.uk",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.875-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1882,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.wordpress.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.872-0700"
+      },
+      "hostName": "www.wordpress.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.wordpress.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.871-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1957,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.google.nl": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.870-0700"
+      },
+      "hostName": "www.google.nl",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.google.nl",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.871-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1966,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.craigslist.org": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.885-0700"
+      },
+      "hostName": "www.craigslist.org",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.craigslist.org",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.874-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1883,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.googleusercontent.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.879-0700"
+      },
+      "hostName": "www.googleusercontent.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.googleusercontent.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.873-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1917,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.taobao.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.880-0700"
+      },
+      "hostName": "www.taobao.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.taobao.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.873-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1911,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.netflix.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.883-0700"
+      },
+      "hostName": "www.netflix.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.netflix.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.874-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1895,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.wikipedia.org": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.886-0700"
+      },
+      "hostName": "www.wikipedia.org",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.wikipedia.org",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.875-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1878,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.google.com.br": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.881-0700"
+      },
+      "hostName": "www.google.com.br",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.google.com.br",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.873-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1906,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.yelp.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.880-0700"
+      },
+      "hostName": "www.yelp.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.yelp.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.873-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1910,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.huffingtonpost.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.886-0700"
+      },
+      "hostName": "www.huffingtonpost.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.huffingtonpost.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.875-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1876,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.soso.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.876-0700"
+      },
+      "hostName": "www.soso.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.soso.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.872-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1931,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.livejournal.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.870-0700"
+      },
+      "hostName": "www.livejournal.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.livejournal.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "2015.10.27.22.24.08.672-0700",
+        "receiveTimeInManager": "2015.10.27.22.24.08.672-0700",
+        "error": false,
+        "statusCode": "200 OK",
+        "statusCodeInt": 200,
+        "operationTimeMillis": 1771,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.alibaba.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.882-0700"
+      },
+      "hostName": "www.alibaba.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.alibaba.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.874-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1905,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.sohu.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.869-0700"
+      },
+      "hostName": "www.sohu.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.sohu.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.870-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1975,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.adobe.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.871-0700"
+      },
+      "hostName": "www.adobe.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.adobe.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.871-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1962,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.blogger.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.880-0700"
+      },
+      "hostName": "www.blogger.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.blogger.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.873-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1913,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.go.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.883-0700"
+      },
+      "hostName": "www.go.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.go.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.874-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1893,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.pinterest.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.878-0700"
+      },
+      "hostName": "www.pinterest.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.pinterest.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.873-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1924,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.amazon.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.881-0700"
+      },
+      "hostName": "www.amazon.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.amazon.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.874-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1906,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.flickr.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.884-0700"
+      },
+      "hostName": "www.flickr.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.flickr.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.874-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1892,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.skype.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.867-0700"
+      },
+      "hostName": "www.skype.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.skype.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.870-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1980,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.ifeng.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.887-0700"
+      },
+      "hostName": "www.ifeng.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.ifeng.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.875-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1874,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.bbc.co.uk": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.880-0700"
+      },
+      "hostName": "www.bbc.co.uk",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.bbc.co.uk",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.873-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1914,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.ask.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.870-0700"
+      },
+      "hostName": "www.ask.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.ask.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.871-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1969,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.google.es": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.871-0700"
+      },
+      "hostName": "www.google.es",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.google.es",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.871-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1964,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.google.com.tr": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.885-0700"
+      },
+      "hostName": "www.google.com.tr",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.google.com.tr",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.874-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1886,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.rakuten.co.jp": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.875-0700"
+      },
+      "hostName": "www.rakuten.co.jp",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.rakuten.co.jp",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.872-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1936,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.avg.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.884-0700"
+      },
+      "hostName": "www.avg.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.avg.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.874-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1890,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.google.pl": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.884-0700"
+      },
+      "hostName": "www.google.pl",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.google.pl",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.874-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1889,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.facebook.com": {
+      "requestParameters": {
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": "",
+        "TRUE_URL": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "PREPARE_TIME": "2015.10.27.22.24.06.870-0700"
+      },
+      "hostName": "www.facebook.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.facebook.com",
+          "port": 80
+        },
+        "responseContent": "NOT_SAVED",
+        "receiveTime": "NA",
+        "receiveTimeInManager": "2015.10.27.22.24.08.871-0700",
+        "error": true,
+        "errorMessage": "REQUEST_CANCELED",
+        "stackTrace": "REQUEST_CANCELED",
+        "statusCode": "NA",
+        "statusCodeInt": -1,
+        "operationTimeMillis": 1967,
+        "pollingHistoryMap": {}
+      }
+    }
+  },
+  "targetHostMeta": {
+    "targetHostId": "THM_97_20151027222406857_6e9a3323-402",
+    "hosts": [
+      "www.facebook.com",
+      "www.google.com",
+      "www.youtube.com",
+      "www.yahoo.com",
+      "www.baidu.com",
+      "www.wikipedia.org",
+      "www.live.com",
+      "www.amazon.com",
+      "www.qq.com",
+      "www.twitter.com",
+      "www.taobao.com",
+      "www.google.co.in",
+      "www.linkedin.com",
+      "www.yahoo.co.jp",
+      "www.msn.com",
+      "www.yandex.ru",
+      "www.ebay.com",
+      "www.google.co.jp",
+      "www.google.de",
+      "www.wordpress.com",
+      "www.bing.com",
+      "www.google.com.hk",
+      "www.vk.com",
+      "www.google.co.uk",
+      "www.google.fr",
+      "www.babylon.com",
+      "www.weibo.com",
+      "www.microsoft.com",
+      "www.tumblr.com",
+      "www.googleusercontent.com",
+      "www.mail.ru",
+      "www.pinterest.com",
+      "www.apple.com",
+      "www.google.com.br",
+      "www.soso.com",
+      "www.PayPal.com",
+      "www.google.ru",
+      "www.google.es",
+      "www.google.it",
+      "www.tmall.com",
+      "www.fc2.com",
+      "www.blogger.com",
+      "www.imdb.com",
+      "www.craigslist.org",
+      "www.ask.com",
+      "www.sohu.com",
+      "www.conduit.com",
+      "www.bbc.co.uk",
+      "www.go.com",
+      "www.amazon.co.jp",
+      "www.google.com.mx",
+      "www.odnoklassniki.ru",
+      "www.google.ca",
+      "www.amazon.de",
+      "www.adobe.com",
+      "www.flickr.com",
+      "www.avg.com",
+      "www.ifeng.com",
+      "www.aol.com",
+      "www.rakuten.co.jp",
+      "www.cnn.com",
+      "www.mywebsearch.com",
+      "www.ebay.de",
+      "www.amazon.co.uk",
+      "www.alibaba.com",
+      "www.espn.go.com",
+      "www.blogspot.in",
+      "www.google.com.tr",
+      "www.google.co.id",
+      "www.instagram.com",
+      "www.huffingtonpost.com",
+      "www.about.com",
+      "www.stackoverflow.com",
+      "www.google.com.au",
+      "www.livedoor.com",
+      "www.ebay.co.uk",
+      "www.netflix.com",
+      "www.dailymotion.com",
+      "www.imgur.com",
+      "www.zedo.com",
+      "www.google.pl",
+      "www.uol.com.br",
+      "www.deviantart.com",
+      "www.google.nl",
+      "www.dropbox.com",
+      "www.ameblo.jp",
+      "www.themeforest.net",
+      "www.weather.com",
+      "www.dailymail.co.uk",
+      "www.slideshare.net",
+      "www.booking.com",
+      "www.yelp.com",
+      "www.livejournal.com",
+      "www.skype.com",
+      "www.wikihow.com",
+      "www.walmart.com",
+      "www.forbes.com"
+    ]
+  },
+  "replacementVarMapNodeSpecific": {},
+  "replacementVarMap": {},
+  "requestReplacementType": "NO_REPLACEMENT",
+  "isPollable": false
+}

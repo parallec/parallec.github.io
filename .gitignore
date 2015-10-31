@@ -27,7 +27,7 @@ parallec_logs/*
 userdata/*
 !userdata/keepthisfile
 
-!userdata/sample_tasklogs/*
+!userdata/sample_tasklogs
 !userdata/tasklogs
 userdata/tasklogs/*
 !userdata/tasklogs/keepthisfile

@@ -1,0 +1,144 @@
+{
+  "submitTime": "2015.10.13.14.03.12.854-0700",
+  "executeStartTime": "2015.10.13.14.03.13.353-0700",
+  "executionEndTime": "2015.10.13.14.03.13.542-0700",
+  "durationSec": 0.189,
+  "requestNum": 3,
+  "requestNumActual": 3,
+  "responsedNum": 3,
+  "taskErrorMetas": [],
+  "responseContext": {},
+  "state": "COMPLETED_WITHOUT_ERROR",
+  "taskId": "PT_3_20151013140312854_a8aa7404-515",
+  "parallelTaskResult": {
+    "www.jeffpei.com": {
+      "requestParameters": {
+        "TRUE_URL": "/validateInternals.html",
+        "PREPARE_TIME": "2015.10.13.14.03.13.353-0700",
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "HTTP_METHOD": "GET",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": ""
+      },
+      "hostName": "www.jeffpei.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "/validateInternals.html",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.jeffpei.com",
+          "port": 80
+        },
+        "responseContent": "<!DOCTYPE html>\n<!-- saved from url=(0045)http://www.jeffpei.com/validateInternals.html -->\n<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\"></head><body>\n\n<h1>My Server Status</h1>\n\n\n<h4>System Health</h4>\n<table border=\"1\">\n    <tbody><tr>\n        <td>Memory-Used-KB</td>\n        <td>19213</td>\n    </tr>\n  \n    <tr>\n        <td>CPU-Usage-Percent</td>\n        <td>27.08</td>\n    </tr>\n\n        \n    <tr>\n        <td>Server-Is-Healthy</td>\n        <td>True</td>\n    </tr>\n    <tr>\n        <td>Host-Name</td>\n        <td>www.jeffpei.com</td>\n    </tr>\n\n\t\n\t</tbody></table>\n\t\n\t\n\t<h4>A demo page to show a sample server health page for use cases by REST Commander.</h4>\n\t\t\n\t\n\n\n\n</body></html>",
+        "receiveTime": "2015.10.13.14.03.13.500-0700",
+        "receiveTimeInManager": "2015.10.13.14.03.13.500-0700",
+        "error": false,
+        "statusCode": "200 OK",
+        "statusCodeInt": 200,
+        "operationTimeMillis": 144,
+        "pollingHistoryMap": {}
+      }
+    },
+    "www.restcommander.com": {
+      "requestParameters": {
+        "TRUE_URL": "/validateInternals.html",
+        "PREPARE_TIME": "2015.10.13.14.03.13.354-0700",
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "HTTP_METHOD": "GET",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": ""
+      },
+      "hostName": "www.restcommander.com",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "/validateInternals.html",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "www.restcommander.com",
+          "port": 80
+        },
+        "responseContent": "<!DOCTYPE html>\r\n<html>\r\n<body>\r\n\r\n<h1>My Server Status</h1>\r\n\r\n\r\n<h4>System Health</h4>\r\n<table border='1'>\r\n    <tr>\r\n        <td>Memory-Used-KB</td>\r\n        <td>51243</td>\r\n    </tr>\r\n  \r\n    <tr>\r\n        <td>CPU-Usage-Percent</td>\r\n        <td>7.08</td>\r\n    </tr>\r\n\r\n        \r\n    <tr>\r\n        <td>Server-Is-Healthy</td>\r\n        <td>True</td>\r\n    </tr>\r\n    <tr>\r\n        <td>Host-Name</td>\r\n        <td>www.restcommander.com</td>\r\n    </tr>\r\n\r\n\t\r\n\t</table>\r\n\t\r\n\t\r\n\t<h4>A demo page to show a sample server health page for use cases by REST Commander.</h4>\r\n\t\t\r\n\t\r\n\r\n</body>\r\n</html>\r\n",
+        "receiveTime": "2015.10.13.14.03.13.500-0700",
+        "receiveTimeInManager": "2015.10.13.14.03.13.500-0700",
+        "error": false,
+        "statusCode": "200 OK",
+        "statusCodeInt": 200,
+        "operationTimeMillis": 143,
+        "pollingHistoryMap": {}
+      }
+    },
+    "parallec.github.io": {
+      "requestParameters": {
+        "TRUE_URL": "/validateInternals.html",
+        "PREPARE_TIME": "2015.10.13.14.03.13.354-0700",
+        "PARALLEC_EMPTY_REQUEST_BODY": "",
+        "TRUE_PORT": "80",
+        "HEADER_META": "",
+        "HTTP_METHOD": "GET",
+        "NEED_POLLER": "false",
+        "STATUS": "COMPLETED",
+        "TRUE_CONTENT": ""
+      },
+      "hostName": "parallec.github.io",
+      "singleTaskResponse": {
+        "request": {
+          "actorMaxOperationTimeoutSec": 15,
+          "resourcePath": "/validateInternals.html",
+          "requestContent": "",
+          "httpMethod": "GET",
+          "pollable": false,
+          "httpHeaderMap": {},
+          "protocol": "HTTP",
+          "host": "parallec.github.io",
+          "port": 80
+        },
+        "responseContent": "<!DOCTYPE html>\n<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\"></head><body>\n\n<h1>My Server Status</h1>\n\n\n<h4>System Health</h4>\n<table border=\"1\">\n    <tbody><tr>\n        <td>Memory-Used-KB</td>\n        <td>177213</td>\n    </tr>\n  \n    <tr>\n        <td>CPU-Usage-Percent</td>\n        <td>2.98</td>\n    </tr>\n\n        \n    <tr>\n        <td>Server-Is-Healthy</td>\n        <td>True</td>\n    </tr>\n    <tr>\n        <td>Host-Name</td>\n        <td>parallec.github.io</td>\n    </tr>\n\n\t\n\t</tbody></table>\n\t\n\t\n\t<h4>A demo page to show a sample server health page.</h4>\n\t\t\n\t\n\n\n\n</body></html>",
+        "receiveTime": "2015.10.13.14.03.13.541-0700",
+        "receiveTimeInManager": "2015.10.13.14.03.13.541-0700",
+        "error": false,
+        "statusCode": "200 OK",
+        "statusCodeInt": 200,
+        "operationTimeMillis": 183,
+        "pollingHistoryMap": {}
+      }
+    }
+  },
+  "commandMeta": {
+    "commandId": "CT_20151013140312853_4d21b06f-e2f",
+    "httpMethod": "GET",
+    "requestUrlPostfix": "/validateInternals.html",
+    "requestContentTemplate": "$PARALLEC_EMPTY_REQUEST_BODY",
+    "requestProtocol": "HTTP",
+    "requestPort": "80",
+    "maxConcurrency": 1700,
+    "parallecHeader": {
+      "headerMap": {}
+    }
+  },
+  "targetHostMeta": {
+    "targetHostType": "THM_3_20151013140312854_1d62692f-766",
+    "nodeList": [
+      "parallec.github.io",
+      "www.jeffpei.com",
+      "www.restcommander.com"
+    ]
+  },
+  "replacementVarMapNodeSpecific": {},
+  "replacementVarMap": {},
+  "requestReplacementType": "NO_REPLACEMENT",
+  "isPollable": false
+}
