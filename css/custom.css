@@ -8,6 +8,24 @@ License URI:http://support.wrapbootstrap.com/
 File Description: Place here your custom CSS styles
 */
 
+
+
+
+
+
+.statcounter img {
+  display: inline;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
 .logo-font {
   font-family: 'Raleway', sans-serif;
 }
