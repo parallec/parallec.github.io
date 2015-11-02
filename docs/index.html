@@ -70,6 +70,8 @@
             
                 <li class="toctree-l3"><a href="#watch-parallec-in-action">Watch Parallec in Action</a></li>
                 
+                    <li><a class="toctree-l4" href="#performance">Performance</a></li>
+                
             
                 <li class="toctree-l3"><a href="#features">Features</a></li>
                 
@@ -77,6 +79,11 @@
                 
             
                 <li class="toctree-l3"><a href="#compare-parallec-vs-rest-commander-vs-threadpoolsasync-client">Compare Parallec vs REST Commander vs ThreadPools+Async Client</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#plugins">Plugins</a></li>
+                
+                    <li><a class="toctree-l4" href="#ssl-client-auth-plugin">SSL Client Auth Plugin</a></li>
                 
             
                 <li class="toctree-l3"><a href="#authors">Authors</a></li>
@@ -89,11 +96,6 @@
                 
             
                 <li class="toctree-l3"><a href="#licenses">Licenses</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#plugins">Plugins</a></li>
-                
-                    <li><a class="toctree-l4" href="#ssl-client-auth-plugin">SSL Client Auth Plugin</a></li>
                 
             
             </ul>
@@ -172,7 +174,7 @@
 <p><img alt="build status" src="https://img.shields.io/badge/build-info=&gt;-green.svg" /> <a href="https://travis-ci.org/eBay/parallec"><img alt="Build Status" src="https://travis-ci.org/eBay/parallec.svg?branch=master" /></a> <a href="https://codecov.io/github/eBay/parallec"><img alt="Coverage Status" src="https://img.shields.io/codecov/c/github/eBay/parallec.svg" /></a> <a href="https://github.com/eBay/parallec/blob/master/LICENSE"><img alt="Apache V2.0 License" src="http://www.parallec.io/images/apache2.svg" /> </a></p>
 <p><img alt="latest 0.9.x" src="http://img.shields.io/badge/latest_stable-0.9.x=&gt;-green.svg" /> <a href="http://search.maven.org/#artifactdetails|io.parallec|parallec-core|0.9.0|"> <img alt="latest beta  maven central" src="https://maven-badges.herokuapp.com/maven-central/io.parallec/parallec-core/badge.svg?style=flat" /></a> </p>
 <p><a href="http://www.parallec.io/javadoc/index.html?io/parallec/core/ParallelClient.html"><img alt="Javadoc" src="http://www.parallec.io/images/parallec-javadoc-blue.svg" /></a> <a href="http://www.parallec.io/docs/"><img alt="Documentation" src="http://www.parallec.io/images/parallec-documentation-red.svg" /></a> <a href="https://github.com/eBay/parallec-samples"><img alt="Samples" src="http://www.parallec.io/images/parallec-samples-brightgreen.svg" /></a> </p>
-<p>Parallec is a performant parallel async http/ssh/tcp/ping client java library. Scalably aggregate and handle API responses <strong>anyway</strong> and send it <strong>anywhere</strong> by writing <a href="https://www.youtube.com/watch?v=sDIP_Ujxkl4">20 lines</a> of code. Response handler with context enables you conduct scalable API calls, then pass aggregated data anywhere to elastic search, kafka, MongoDB, graphite, memcached, etc. </p>
+<p>Parallec is a performant parallel async http/ssh/tcp/ping client java library. Scalably aggregate and handle API responses <strong>anyway</strong> and send it <strong>anywhere</strong> by writing <a href="https://www.youtube.com/watch?v=QcavegPMDms">20 lines</a> of code. Response handler with context enables you conduct scalable API calls, then pass aggregated data anywhere to elastic search, kafka, MongoDB, graphite, memcached, etc. </p>
 <p>Parallec means <strong>Paralle</strong>l <strong>C</strong>lient, and is pronounced as "Para-like". Parallec is built on Akka actors and Async HTTP Client / Netty / Jsch.  The library focuses on HTTP while also enables scalable communication over SSH/Ping/TCP.</p>
 <p><img alt="Workflow Overview" src="http://www.parallec.io/images/parallec-flow.svg" /></p>
 <h4 id="motivation">Motivation</h4>
@@ -268,9 +270,16 @@ pc.releaseExternalResources();
 </code></pre>
 
 <h2 id="watch-parallec-in-action">Watch Parallec in Action</h2>
-<p><a href="https://www.youtube.com/watch?v=sDIP_Ujxkl4" title="Parallec demo - Click to Watch!"><strong>Watch Demo</strong></a>: Parallec Aggregates 100 websites status with 20 lines of code in 4 seconds.</p>
-<p>Internally we conducted similar remote API execution with response aggregated, visualized on 3,000 servers within 15 seconds, by writing 25 lines of code. Note that the time includes publishing to elastic search time.</p>
-<p><img alt="20 lines parallec to elastic search demo" src="http://www.parallec.io/demos/elastic-web100-v2.gif" width="700" /></p>
+<p><a href="https://www.youtube.com/watch?v=QcavegPMDms" title="Parallec demo - Click to Watch!"><strong>Watch Demo</strong></a>: Parallec Aggregates 100 websites status with 20 lines of code.</p>
+<p><a title="Click to Watch HD version in Youtube" href="https://www.youtube.com/watch?v=QcavegPMDms"><img alt="20 lines parallec to elastic search demo" src="http://www.parallec.io/demos/elastic-web100-v3.gif" /></a></p>
+<h3 id="performance">Performance</h3>
+<p>Note that speed varies based on network speed, API response time, the slowest servers, and concurrency settings.</p>
+<h5 id="http">HTTP</h5>
+<p>We conducted remote task execution API on 3,000 servers with response aggregated to elastic search, visualized within 15 seconds, by writing 25 lines of code.</p>
+<p>With another faster API, calls to 8,000 servers in the same datacenter with response aggregated in memory in 12 seconds. </p>
+<h5 id="ping">Ping</h5>
+<p>Parallec 2.7 seconds vs FPing 4.5 seconds on 1500 servers. Parallec is 67% faster than <a href="http://fping.org/">FPing</a> (after best-effort tuning : -i 1 -r 0 v3.12)  of pinging 1500 servers while getting the same ping results.  While FPing consistently crashing (seg fault) when it pings 2000 or more servers,  Parallec pings 8000 servers within 11.8 seconds with breeze.</p>
+<p>As usual, don't rely on these numbers and perform your own benchmarks.</p>
 <h2 id="features">Features<a name="features"></a></h2>
 <p><strong>90%+ Test coverage</strong> assures you always find an example of each of feature.</p>
 <ol>
@@ -305,7 +314,7 @@ pc.releaseExternalResources();
 <th align="center">Features</th>
 <th align="center">Parallec</th>
 <th align="center">REST Commander</th>
-<th align="center">ThreadPools w/ Async Client</th>
+<th align="center">Thread Pools + Async Client</th>
 </tr>
 </thead>
 <tbody>
@@ -437,6 +446,8 @@ pc.releaseExternalResources();
 </tr>
 </tbody>
 </table>
+<h2 id="plugins"><a href="https://github.com/eBay/parallec-plugins">Plugins</a></h2>
+<h4 id="ssl-client-auth-plugin"><a href="https://github.com/eBay/parallec-plugins">SSL Client Auth Plugin</a></h4>
 <h2 id="authors">Authors</h2>
 <p>Parallec is served to you by <a href="https://www.linkedin.com/in/peiyuant">Yuanteng (Jeff) Pei</a> and <a href="https://www.linkedin.com/pub/teng-song/49/763/713">Teng Song</a>, <a href="https://helpusbuild.ebayc3.com/">Cloud Infrastructure &amp; Platform Services (CIPS)</a> at eBay Inc. </p>
 <h2 id="credits-acknowledgement">Credits &amp; Acknowledgement</h2>
@@ -451,8 +462,6 @@ pc.releaseExternalResources();
 <h2 id="licenses">Licenses</h2>
 <p>Code licensed under Apache License v2.0</p>
 <p>© 2015 eBay Software Foundation</p>
-<h2 id="plugins"><a href="https://github.com/eBay/parallec-plugins">Plugins</a></h2>
-<h4 id="ssl-client-auth-plugin"><a href="https://github.com/eBay/parallec-plugins">SSL Client Auth Plugin</a></h4>
               
             </div>
           </div>
@@ -498,5 +507,5 @@ pc.releaseExternalResources();
 
 <!--
 MkDocs version : 0.14.0
-Build Date UTC : 2015-11-02 04:02:53.778695
+Build Date UTC : 2015-11-02 05:42:06.577674
 -->
