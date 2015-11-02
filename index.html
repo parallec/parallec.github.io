@@ -6,9 +6,9 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>Parallec.io | Page Coming Soon</title>
-		<meta name="description" content="The Project a Bootstrap-based, Responsive HTML5 Template">
-		<meta name="author" content="htmlcoder.me">
+		<title>Parallec.io | Performant Parallel Requests Made Easy</title>
+		<meta name="description" content="Parallec: Parallel Async HTTP/SSH/TCP/Ping Client Java Library">
+		<meta name="author" content="Yuanteng Jeff Pei">
 
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,20 +33,24 @@
 
 		<!-- Plugins -->
 		<link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+		<link href="plugins/rs-plugin/css/settings.css" rel="stylesheet">
 		<link href="css/animations.css" rel="stylesheet">
 		<link href="plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
 		<link href="plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
-		<link href="plugins/hover/hover-min.css" rel="stylesheet">		
+		<link href="plugins/hover/hover-min.css" rel="stylesheet">
 		
-		<link href="plugins/jquery.countdown/jquery.countdown.css" rel="stylesheet">
 		<!-- the project core CSS file -->
 		<link href="css/style.css" rel="stylesheet" >
 
 		<!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer)-->
-		<link href="css/skins/light_blue.css" rel="stylesheet">
+		<link href="css/skins/blue.css" rel="stylesheet">
+
+
 
 		<!-- Custom css --> 
 		<link href="css/custom.css" rel="stylesheet">
+		 <!-- Highlight.js jeff -->
+		<link rel="stylesheet" href="css/mono-blue.min.css">
 	</head>
 
 	<!-- body classes:  -->
@@ -64,62 +68,668 @@
 		<!-- ================ -->
 		<div class="page-wrapper">
 		
-			<!-- background image -->
-			<div class="fullscreen-bg"></div>
+			<!-- header-container start -->
+			<div class="header-container">
+				
 
-			<!-- banner start -->
-			<!-- ================ -->
-			<div class="pv-40 dark-translucent-bg">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8 text-center col-md-offset-2 pv-20">
-							<div class="object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100">
-								<!-- logo -->
-								<div id="logo" class="logo text-center">
-									<h3 class="margin-clear"><a href="https://github.com/ebay/parallec" class="logo-font link-light"><span class="text-default">Parallec</span>.io</a></h3>
-								</div>
-								<!-- name-and-slogan -->
-								<p class="small">Performant Parallel Requests Made Easy</p>
-								<h1 class="page-title text-center">Coming Soon</h1>
-								<div class="separator"></div>
-								<p class="text-center">Stay Tuned.</p>
-								<ul class="list-inline mb-20 text-center">
-									<li><i class="text-default fa fa-map-marker pr-5"></i>San Jose, CA 95131</li>
+
+				
+				<!-- header start -->
+				<!-- classes:  -->
+				<!-- "fixed": enables fixed navigation mode (sticky menu) e.g. class="header fixed clearfix" -->
+				<!-- "dark": dark version of header e.g. class="header dark clearfix" -->
+				<!-- "full-width": mandatory class for the full-width menu layout -->
+				<!-- "centered": mandatory class for the centered logo layout -->
+				<!-- ================ --> 
+				<header class="header  fixed   clearfix">
+					
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3">
+								<!-- header-left start -->
+								<!-- ================ -->
+								<div class="header-left clearfix">
+
+									<!-- logo parallec -->
+									<div id="logo" class="logo">
+										<a href="index.html"><img id="logo_img" src="images/logo_parallec.png" alt="The Project"></a>
+									</div>
+
+									<!-- name-and-slogan -->
+									<div class="site-slogan">
+										   Performant Parallel Requests Made Easy
+									</div>
 									
-									<li><i class="text-default fa fa-envelope-o pl-10 pr-5"></i>Cloud Engineering at eBay</a></li>
-								</ul>
-								<!-- countdown start -->
-								<div class="countdown clearfix"></div>
-								<!-- countdown end -->
-								
-							</div> 
+								</div>
+								<!-- header-left end -->
+
+							</div>
+							<div class="col-md-9">
+					
+								<!-- header-right start -->
+								<!-- ================ -->
+								<div class="header-right clearfix">
+									
+								<!-- main-navigation start -->
+								<!-- classes: -->
+								<!-- "onclick": Makes the dropdowns open on click, this the default bootstrap behavior e.g. class="main-navigation onclick" -->
+								<!-- "animated": Enables animations on dropdowns opening e.g. class="main-navigation animated" -->
+								<!-- "with-dropdown-buttons": Mandatory class that adds extra space, to the main navigation, for the search and cart dropdowns -->
+								<!-- ================ -->
+								<div class="main-navigation  animated with-dropdown-buttons">
+
+									<!-- navbar start -->
+									<!-- ================ -->
+									<nav class="navbar navbar-default" role="navigation">
+										<div class="container-fluid">
+
+											<!-- Toggle get grouped for better mobile display -->
+											<div class="navbar-header">
+												<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+													<span class="sr-only">Toggle navigation</span>
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+												</button>
+												
+											</div>
+
+											<!-- Collect the nav links, forms, and other content for toggling -->
+											<div class="collapse navbar-collapse" id="navbar-collapse-1">
+												<!-- main-menu -->
+												<ul class="nav navbar-nav ">
+													<!-- mega-menu start -->													
+													<li class="mega-menu">
+														<a href="http://www.parallec.io">Home</a>
+													</li>
+													<!-- mega-menu end -->
+
+													<!-- mega-menu start -->													
+													<li class="mega-menu">
+														<a href="http://www.parallec.io/docs/">Documentation</a>
+													
+													</li>
+													<!-- mega-menu end -->
+													<!-- mega-menu start -->
+													<li class="mega-menu">
+														<a href="http://www.parallec.io/javadoc/index.html?io/parallec/core/package-summary.html">Javadoc</a>
+													</li>
+													<!-- mega-menu end -->
+
+													<!-- mega-menu start -->
+													<li class="mega-menu">
+														<a href="https://github.com/eBay/parallec-samples">Samples</a>
+													</li>
+													<!-- mega-menu end -->
+
+													<!-- mega-menu start -->
+													<li class="mega-menu">
+														<a href="https://github.com/eBay/parallec/">Github <i class="fa fa-github-alt pl-5"></i></a>
+													</li>
+													<!-- mega-menu end -->
+
+
+						
+												
+											</div>
+
+										</div>
+									</nav>
+									<!-- navbar end -->
+
+								</div>
+								<!-- main-navigation end -->	
+								</div>
+								<!-- header-right end -->
+					
+							</div>
 						</div>
 					</div>
-					<!-- .subfooter start -->
+				<!-- SumoMe -->
+				<script src="//load.sumome.com/" data-sumo-site-id="040dc2b237b92a8ef0509df79fb2fe9f268b9438c56fda9a068214927b1bc2fd" async="async"></script>
+
+				</header>
+				<!-- header end -->
+			</div>
+			<!-- header-container end -->
+		
+			<!-- banner start -->
+			<!-- ================ -->
+			<div class="banner clearfix">
+
+				<!-- slideshow start -->
+				<!-- ================ -->
+				<div class="slideshow">
+					
+					<!-- slider revolution start -->
 					<!-- ================ -->
-					<p class="text-center object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100">Copyright © 2015 Parallec.io by <a target="_blank" href="https://github.com/ebay/parallec">eBay Software Foundation</a>. All Rights Reserved
+					<div class="slider-banner-container">
+						<div class="slider-banner-fullwidth">
+							<ul class="slides">
+								<!-- slide 1 start -->
+								<!-- ================ -->
+								<li data-transition="random" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="Parallel Async Communication">
+								
+								<!-- main image -->
+								<img src="images/parallec-intro-banner.jpg" alt="slidebg1" data-bgposition="center top"  data-bgrepeat="no-repeat" data-bgfit="cover">
+								
+								<!-- Transparent Background -->
+								<div class="tp-caption dark-translucent-bg"
+									data-x="center"
+									data-y="bottom"
+									data-speed="600"
+									data-start="0">
+								</div>
 
-					<!-- Start of StatCounter Code for Default Guide -->
-<script type="text/javascript">
-var sc_project=10678959; 
-var sc_invisible=0; 
-var sc_security="957d7138"; 
-var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "http://www.");
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
+								<!-- LAYER NR. 1 -->
+								<div class="tp-caption sfb fadeout text-center large_white"
+									data-x="center"
+									data-y="50"
+									data-speed="500"
+									data-start="1000"
+									data-easing="easeOutQuad">
 
-<!-- End of StatCounter Code for Default Guide -->
-					</p>
+									<span class="logo-font"><span class="text-default">
+										<div class="statcounter">
+											<a href="index.html"><img  id="logo_img" src="images/parallec-logo-wh.png" width="325" alt="Parallec.io"></a>
+										</div>
+									</span> 
+									Parallel Async HTTP/SSH/TCP/Ping Client
+								</div>	
+
+								<!-- LAYER NR. 2 -->
+								<div class="tp-caption sfb fadeout text-center large_white tp-resizeme hidden-xs"
+									data-x="center"
+									data-y="150"
+									data-speed="500"
+									data-start="1300"
+									data-easing="easeOutQuad"><div class="separator light"></div>
+								</div>	
+
+								<!-- LAYER NR. 3 -->
+								<div class="tp-caption sfb fadeout medium_white text-center hidden-xs"
+									data-x="center"
+									data-y="190"
+									data-speed="500"
+									data-start="1300"
+									data-easing="easeOutQuad"
+									data-endspeed="600">Scalably aggregate API data anyway, <br> and send it anywhere by writing 20 lines of code. <br> Scalable server management, orchestration, and discovery.
+								</div>
+
+								<!-- LAYER NR. 4 -->
+								<div class="tp-caption sfb fadeout small_white text-center"
+									data-x="center"
+									data-y="300"
+									data-speed="500"
+									data-start="1600"
+									data-easing="easeOutQuad"
+									data-endspeed="600"><a href="https://github.com/eBay/parallec/" class="btn btn-dark btn-animated">Check Github <i class="fa fa-github-alt pl-20"></i></a> <span class="pl-5 pr-5">or</span> <a href="http://www.parallec.io/docs/index#get-started" class="btn btn-default btn-animated">Get Started <i class="fa fa-download"></i></a>
+								</div>
+
+								</li>
+								<!-- slide 1 end -->
+
+								<!-- slide 2 start -->
+								<!-- ================ -->
+								<li data-transition="random" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="Just An Import Away">
+								
+								<!-- main image -->
+								<img src="images/parallec-background-img-4-cut.jpg" alt="slidebg2" data-bgposition="center top"  data-bgrepeat="no-repeat" data-bgfit="cover">
+
+								<!-- Transparent Background -->
+								<div class="tp-caption light-translucent-bg"
+									data-x="center"
+									data-y="bottom"
+									data-speed="600"
+									data-start="0">
+								</div>
+
+								<!-- LAYER NR. 1 -->
+								<div class="tp-caption sfb fadeout text-center large_dark"
+									data-x="center"
+									data-y="50"
+									data-speed="500"
+									data-start="1000"
+									data-easing="easeOutQuad"><span class="logo-font"><span class="text-default">
+
+									<div class="statcounter">
+										<a href="index.html"><img  id="logo_img" src="images/parallec-logo.png" width="325" alt="Parallec.io"></a>
+									</div>
+									Flexible Response Handling & Destinations
+								</div>	
+
+								<!-- LAYER NR. 2 -->
+								<div class="tp-caption sfb fadeout text-center large_dark tp-resizeme hidden-xs"
+									data-x="center"
+									data-y="150"
+									data-speed="500"
+									data-start="1300"
+									data-easing="easeOutQuad"><div class="separator dark"></div>
+								</div>	
+
+								<!-- LAYER NR. 3 -->
+								<div class="tp-caption sfb fadeout medium_dark text-center hidden-xs"
+									data-x="center"
+									data-y="190"
+									data-speed="500"
+									data-start="1300"
+									data-easing="easeOutQuad"
+									data-endspeed="600">
+									<i class="icon-check text-default"></i> 15+ New features to REST Commander<br>
+									<i class="icon-check text-default"></i> 90%+ Test coverage <i class="icon-check text-default"></i> Generic response handlers and context
+									<br> <i class="icon-check text-default"></i> Auto-progress polling for async APIs     <i class="icon-check text-default"></i> Capacity aware scheduler
 
 
+								</div>
 
-					<!-- .subfooter end -->
+								<!-- LAYER NR. 4 -->
+								<div class="tp-caption sfb fadeout small_dark text-center"
+									data-x="center"
+									data-y="300"
+									data-speed="500"
+									data-start="1600"
+									data-easing="easeOutQuad"
+									data-endspeed="600"><a href="http://www.parallec.io/docs/index#compare" class="btn btn-dark btn-animated">Check New Features <i class="fa fa-arrow-right"></i></a> <span class="pl-5 pr-5">or</span> <a href="https://github.com/eBay/parallec-samples" class="btn btn-default btn-animated">Check Sample Code <i class="fa fa-github-alt pl-20"></i></a>
+								</div>
+
+								</li>
+								<!-- slide 2 end -->
+							</ul>
+							<div class="tp-bannertimer"></div>
+						</div>
+					</div>
+					<!-- slider revolution end -->
+
 				</div>
+				<!-- slideshow end -->
+
 			</div>
 			<!-- banner end -->
+			
+			<div id="page-start"></div>
+
+
+			<!-- section start -->
+			<!-- ================ -->
+			<section class="light-gray-bg pv-30 padding-bottom-clear clearfix">
+				<div class="container">
+					<h3 class="logo-font text-center text-muted"><span class="text-default">
+						<div class="statcounter">
+							<a href="index.html"><img  id="logo_img" src="images/parallec-logo.png" width="325" alt="Parallec.io"></a>
+						</div>
+						</span>
+					</h3>
+
+					<p class="text-center">Parallec is a Parallel Async HTTP/SSH/TCP/Ping Client Java Library. It means "Parallel Client" and can be pronounced as "Para-like".</p>
+					<br>
+					<div class="row">
+						<div class="col-md-4 ">
+							<div class="pv-20 ph-20 feature-box-2 boxed shadow object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+								<span class="icon without-bg"><i class="fa text-default fa-diamond"></i></span>
+								<div class="body">
+									<h4 class="title">Response Handler &amp; Context</h4>
+									<p>Generic response handler with context enables total freedom of control. Process data anyway and send it anywhere.</p>
+									<a href="http://www.parallec.io/docs/submit-task/#apis-on-response-handling">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 ">
+							<div class="pv-20 ph-20 feature-box-2 boxed shadow object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
+								<span class="icon without-bg"><i class="fa text-default icon-users"></i></span>
+								<div class="body">
+									<h4 class="title">Exceedingly User Friendly</h4>
+									<p>Intuitive builder pattern APIs make parallel requests exceedlingly easy. <a href="http://www.parallec.io/docs/submit-task/#setTargetHosts" >Input target hosts</a> from list, string, text, json path from local or urls.</p>
+									<a href="http://www.parallec.io/docs/submit-task/">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 ">
+							<div class="pv-20 ph-20 feature-box-2 boxed shadow object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="300">
+								<span class="icon without-bg"><i class="text-default icon-loop-alt-outline"></i></span>
+								<div class="body">
+									<h4 class="title">Auto Progress Polling</h4>
+									<p>Auto progress polling to handle <strong>async APIs</strong>, enabling task level concurrency control.</p>
+									<a href="http://www.parallec.io/docs/submit-task/#async-apis-and-auto-progress-polling">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-md-4 ">
+							<div class="pv-20 ph-20 feature-box-2 boxed shadow object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+								<span class="icon without-bg"><i class="fa text-default fa-bolt"></i></span>
+								<div class="body">
+									<h4 class="title">Scalable &amp; Fast</h4>
+									<p>Infinite scalablility with built-in concurrency control. Ping 8,000 Servers in 12 seconds. 8,000 HTTP APIs in 12 seconds. </p>
+									<a href="http://www.parallec.io/docs/#performance">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 ">
+							<div class="pv-20 ph-20 feature-box-2 boxed shadow object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="300">
+								<span class="icon without-bg"><i class="fa text-default fa-support"></i></span>
+								<div class="body">
+									<h4 class="title">90%+ Code Coverage</h4>
+									<p> High test coverage validates every feature we built. Use and contribute with confidence.</p>
+									<a href="https://codecov.io/github/eBay/parallec">Check Coverage<i class="pl-5 fa fa-angle-double-right"></i></a>
+								</div>
+							</div>
+						</div>						
+						<div class="col-md-4 ">
+							<div class="pv-20 ph-20 feature-box-2 boxed shadow object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
+								<span class="icon without-bg"><i class="text-default icon-eye"></i></span>
+								<div class="body">
+									<h4 class="title">Feature Packed</h4>
+									<p>Task and host level progress tracking and cancelation. Capacity-aware task scheduler. Flexible handler locations. 
+									Logging, status aggregation and more.</p>
+									<a href="http://www.parallec.io/docs/#features">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<br>
+				</div>
+			</section>
+			<!-- section end -->
+
+			<!-- footer top start -->
+			<!-- ================ -->
+			<div class="dark-bg  default-hovered footer-top animated-text">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="call-to-action text-center">
+								<div class="row">
+									<div class="col-sm-8">
+										<h2>Scalable and Fast API Aggregation</h2>
+										<h2>By writing 20 lines of codes</h2>
+									</div>
+									<div class="col-sm-4">
+										<p class="mt-10"><a href="https://www.youtube.com/watch?v=QcavegPMDms" class="btn btn-animated btn-lg btn-gray-transparent ">Watch Demo<i class="fa fa-youtube-play pl-20"></i></a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- footer top end -->
+
+
+
+
+			<!-- section -->
+			<!-- ================ -->
+			<section class="pv-30" id="code-sample">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<h2 class="text-center">Send Aggregated API Data <strong>Anywhere</strong></h2>
+							<div class="separator"></div>
+							<p class="large text-center">Generic response hander/conext enables you send aggregated data anywhere, to Kafka, graphite, Elastic Search, Redis, MongoDb, and etc. Check example here to aggregate 100 website information and send its status code to elastic search and visualized in Kibana in <strong>20 lines of code</strong>.</p>
+							<br>
+							
+						</div>
+					</div>
+				</div>
+				<div class="owl-carousel content-slider-with-large-controls-autoplay">
+
+<!-- One Page in Owl Start -->
+
+
+
+
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8">
+								<pre><code class="java">ParallelClient pc = new ParallelClient();
+org.elasticsearch.node.Node node = nodeBuilder().node(); //elastic client initialize
+HashMap<String, Object> responseContext = new HashMap<String, Object>();
+responseContext.put("Client", node.client());
+pc.prepareHttpGet("")
+        .setConcurrency(1000)
+        .setTargetHostsFromLineByLineText("http://www.parallec.io/userdata/sample_target_hosts_top100_old.txt",
+                 HostsSourceType.URL)
+        .setResponseContext(responseContext)
+        .execute( new ParallecResponseHandler() {
+            public void onCompleted(ResponseOnSingleTask res,
+                    Map<String, Object> responseContext) {
+                Map<String, Object> metricMap = new HashMap<String, Object>();
+                metricMap.put("StatusCode", res.getStatusCode().replaceAll(" ", "_"));
+                metricMap.put("LastUpdated",PcDateUtils.getNowDateTimeStrStandard());
+                metricMap.put("NodeGroupType", "Web100");
+                Client client = (Client) responseContext.get("Client");
+                client.prepareIndex("local", "parallec", res.getHost()).setSource(metricMap).execute();
+            }
+        });
+node.close(); pc.releaseExternalResources();
+</code></pre>
+							</div>
+							<div class="col-md-4">
+							    <p class="space-top">Complete <a href="https://github.com/eBay/parallec-samples/blob/master/sample-apps/src/main/java/io/parallec/sample/app/http/Http100WebAggregateToElasticSearchApp.java" >Code</a></p>
+								<p ><a href="http://search.maven.org/#artifactdetails|io.parallec|parallec-core|0.9.0|" >Maven Import</a></p>
+									<pre><code class="xml">&lt;dependency&gt;
+	&lt;groupId&gt;io.parallec&lt;/groupId&gt;
+	&lt;artifactId&gt;parallec-core&lt;/artifactId&gt;
+	&lt;version&gt;0.9.0&lt;/version&gt;
+&lt;/dependency&gt;
+									</code></pre>
+<p ><a href="http://search.maven.org/#artifactdetails|io.parallec|parallec-core|0.9.0|" >Gradle Import</a></p>
+									<pre><code class="xml">compile 'io.parallec:parallec-core:0.9.0'
+									</code></pre>									
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<!-- section end -->
+
+			<!-- section start -->
+			<!-- ================ -->
+			<section class="section default-bg clearfix">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="call-to-action text-center">
+								<div class="row">
+									<div class="col-sm-8">
+										<h1 class="title">Try Parallec Now</h1>
+										<p>Monitoring, command execution, discovery with performant polling with HTTP/TCP agent. Or simply parallel SSH in agent-less solutions.</p>
+									</div>
+									<div class="col-sm-4">
+										<br>
+										<p class="mt-10"><a href="http://www.parallec.io/docs/#get-started" class="btn btn-animated btn-lg btn-gray-transparent ">Get Started<i class="fa fa-book pl-20"></i></a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section end -->
+
+
+			<!-- section -->
+			<!-- ================ -->
+			<section class="pv-30">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<h2 class="text-center">Why <strong>Parallec</strong> ?</h2>
+							<div class="separator"></div>
+							<p class="large text-center">Compared with java thread pool based solution, parallec give you worry free concurrency control without constraints on thread size. Compared with single-thread NodeJs solutions, Parallec enables concurrency computation-intensive response handling.</p>
+							<br>
+							
+						</div>
+					</div>
+				</div>
+				<div class="owl-carousel content-slider-with-large-controls-autoplay">
+				<!-- One Page in Owl Start -->
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8">
+								<img alt="Workflow" src="http://www.parallec.io/images/parallec-flow.svg">
+							</div>
+							<div class="col-md-4">
+								<h2 class="text-center"> <strong>Flow</strong> Overview</h2>
+								<div class="separator"></div>
+								<p class="large text-center"></p>
+								<p>Our goal is simply to execute a task of firing a list of uniform or non-uniform HTTP/TCP/SSH/PING requests to a list of target hosts, then call the user defined handler to handler each of the responses.</p>
+								<p><a href="http://www.parallec.io/docs/api-overview/" class="btn btn-default-transparent btn-animated">Read API Overview <i class="fa fa-arrow-right pl-10"></i></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section end -->
+
+
+			<!-- section start -->
+			<!-- ================ -->
+			<section class="section default-bg clearfix">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="call-to-action text-center">
+								<div class="row">
+									<div class="col-sm-8">
+										<h1 class="title">Try with Sample Code</h1>
+										<p>Most files are independent with a main function and can be run directly. The sample spark server is a single file executable web server, which demonstrates parallel SSH/HTTP/Ping features.</p>
+									</div>
+									<div class="col-sm-4">
+										<br>
+										<p class="mt-10"><a href="https://github.com/eBay/parallec-samples" class="btn btn-animated btn-lg btn-gray-transparent ">Try with Sample Code<i class="fa fa-flask pl-20"></i></a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section end -->
+			
+			
+			<!-- footer start (Add "dark" class to #footer in order to enable dark footer) -->
+			<!-- ================ -->
+			<footer id="footer" class="clearfix ">
+
+				<!-- .footer start -->
+				<!-- ================ -->
+				<div class="footer">
+					<div class="container">
+						<div class="footer-inner">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="footer-content">
+										<div class="logo-footer"><img id="logo-footer" src="images/logo_parallec.png" alt=""></div>
+										<p> With the feedbacks, lessons, and improvements from the past year of internal usage and open source of REST Commander, we now made the core of REST Commander as an easy to use standalone library. We added 15+ new features, rewritten 70%+ of the code, with 90%+ test coverage for confident usage and contribution. This time we also structure it better so that most internal development can be directly made here.
+
+										</p>
+										<div class="separator-2"></div>
+										<nav>
+											<ul class="nav nav-pills nav-stacked">
+
+
+												<li><a target="_blank" href="http://www.ebaytechblog.com/2014/03/11/rest-commander-scalable-web-server-management-and-monitoring">eBay Tech Blog</a></li>			
+												<li><a target="_blank" href="http://www.restcommander.com/">REST Commander</a></li>
+
+												
+											</ul>
+										</nav>
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="footer-content">
+										<h2 class="title">Performance</h2>
+										<div class="separator-2"></div>
+										
+										
+										<canvas class="graph bar" id="fping-bars" ></canvas>
+										<br>
+										<br>
+
+										<p>Parallec uses 2.7 seconds to ping 1500 servers, while FPing takes 4.5 seconds. Parallec is 67% faster than FPing (after best-effort tuning : -i 1 -r 0 v3.12) of pinging 1500 servers while getting the same ping results. </p>
+										<div class="separator-2"></div>
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="footer-content">
+										<h2 class="title">About Parallec</h2>
+										<div class="separator-2"></div>
+										<p>Parallec is served to you by Yuanteng (Jeff) Pei and Teng Song, at Cloud Infrastructure and Platform Engineerning (CIPS) at eBay. 
+
+										</p>
+										<p>We thanks our manager Andy Santosa, project manager Marco Rotelli, Cloud Infrastructure & Platform Services (CIPS) and legal for the big support on this project and the open source effort.
+
+
+										</p>
+
+
+
+										<div class="separator-2"></div>
+										<nav>
+											<ul class="nav nav-pills nav-stacked">
+
+
+												<li><a target="_blank" href="https://github.com/eBay/parallec/">Parallec @ Github</a></li>
+												<li><a target="_blank" href="http://helpusbuild.ebayc3.com/">Join eBay Cloud</a></li>
+												<li><a target="_blank" href="https://careers.ebayinc.com/join-our-team/start-your-search/">eBay Career</a></li>
+
+												
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- .footer end -->
+
+				<!-- .subfooter start -->
+				<!-- ================ -->
+				<div class="subfooter">
+					<div class="container">
+						<div class="subfooter-inner">
+							<div class="row">
+								<div class="col-md-12">
+									<p class="text-center">Code licensed under Apache License v2.0, documentation and video under CC BY 3.0. <br> © 2015 Parallec.io by <a target="_blank" href="http://www.ebay.com">eBay Software Foundation</a>. All Rights Reserved. 
+
+									<!-- Start of StatCounter Code for Default Guide -->
+									<script type="text/javascript">
+									var sc_project=10678959; 
+									var sc_invisible=0; 
+									var sc_security="957d7138"; 
+									var scJsHost = (("https:" == document.location.protocol) ?
+									"https://secure." : "http://www.");
+									document.write("<sc"+"ript type='text/javascript' src='" +
+									scJsHost+
+									"statcounter.com/counter/counter.js'></"+"script>");
+									</script>
+									<noscript><div class="statcounter"><a title="shopify
+									analytics" href="http://statcounter.com/shopify/"
+									target="_blank"><img class="statcounter"
+									src="http://c.statcounter.com/10678959/0/957d7138/0/"
+									alt="shopify analytics"></a></div></noscript>
+									<!-- End of StatCounter Code for Default Guide -->
+
+
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- .subfooter end -->
+
+			</footer>
+			<!-- footer end -->
 
 
 			
@@ -135,6 +745,13 @@ scJsHost+
 		<!-- Modernizr javascript -->
 		<script type="text/javascript" src="plugins/modernizr.js"></script>
 
+		<!-- jQuery Revolution Slider  -->
+		<script type="text/javascript" src="plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+		<!-- Isotope javascript -->
+		<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+		
 		<!-- Magnific Popup javascript -->
 		<script type="text/javascript" src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
 		
@@ -157,15 +774,30 @@ scJsHost+
 		<script type="text/javascript" src="plugins/jquery.browser.js"></script>
 		<script type="text/javascript" src="plugins/SmoothScroll.js"></script>
 
-		<!-- Count Down javascript -->
-		<script type="text/javascript" src="plugins/jquery.countdown/jquery.plugin.js"></script>
-		<script type="text/javascript" src="plugins/jquery.countdown/jquery.countdown.js"></script>
-		<script type="text/javascript" src="js/coming.soon.config.js"></script>
-
 		<!-- Initialization of Plugins -->
 		<script type="text/javascript" src="js/template.js"></script>
 
 		<!-- Custom Scripts -->
 		<script type="text/javascript" src="js/custom.js"></script>
+
+				<!-- Charts -->
+		<script src="plugins/charts/Chart.js"></script>
+
+		<!-- Charts  FPing data-->
+		<script src="js/custom.js"></script>
+
+		 <!-- Highlight.js jeff -->
+		<script src="js/highlight.min.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+		
+
+        <!-- Share must be after jquery-->
+
+        <div id="github_stars">
+            <iframe src="http://ghbtns.com/github-btn.html?user=eBay&amp;repo=parallec&amp;type=watch&amp;count=true&amp;size=small" allowtransparency="true" frameborder="0" scrolling="0" width="200" height="20"></iframe>
+        </div>
+
+
+
 	</body>
 </html>
