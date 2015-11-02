@@ -61,24 +61,24 @@
                 <li class="toctree-l3"><a href="#use-cases">Use Cases</a></li>
                 
             
-                <li class="toctree-l3"><a href="#get-started">Get Started</a></li>
+                <li class="toctree-l3"><a href="#features">Features</a></li>
                 
-                    <li><a class="toctree-l4" href="#maven-gradle-import">Maven / Gradle Import</a></li>
-                
-                    <li><a class="toctree-l4" href="#minimum-example">Minimum Example</a></li>
+                    <li><a class="toctree-l4" href="#get-started">Get Started</a></li>
                 
             
                 <li class="toctree-l3"><a href="#watch-parallec-in-action">Watch Parallec in Action</a></li>
                 
-                    <li><a class="toctree-l4" href="#performance">Performance</a></li>
-                
             
-                <li class="toctree-l3"><a href="#features">Features</a></li>
+                <li class="toctree-l3"><a href="#performance">Performance</a></li>
                 
-                    <li><a class="toctree-l4" href="#actor-based-concurrency-control">Actor Based Concurrency Control</a></li>
+                    <li><a class="toctree-l4" href="#http">HTTP</a></li>
+                
+                    <li><a class="toctree-l4" href="#ping">Ping</a></li>
                 
             
                 <li class="toctree-l3"><a href="#compare-parallec-vs-rest-commander-vs-threadpoolsasync-client">Compare Parallec vs REST Commander vs ThreadPools+Async Client</a></li>
+                
+                    <li><a class="toctree-l4" href="#actor-based-concurrency-control">Actor Based Concurrency Control</a></li>
                 
             
                 <li class="toctree-l3"><a href="#plugins">Plugins</a></li>
@@ -192,6 +192,25 @@
 <li>Orchestration and work flows on multiple web servers. </li>
 <li>Parallel different requests with controlled concurrency to a single server. </li>
 </ol>
+<h2 id="features">Features<a name="features"></a></h2>
+<p><strong>90%+ Test coverage</strong> assures you always find an example of each of feature.</p>
+<ol>
+<li><strong>Exceedingly intuitive</strong> interface with builder pattern similar to that in <a href="https://github.com/AsyncHttpClient/async-http-client">Async HTTP Client</a>, but handles concurrency behind the scenes.</li>
+<li><strong>Generic response handler with context</strong>. Enable total freedom of processing each response your way. Process and aggregate data <strong>anywhere</strong> to Kafka, Redis, Elastic Search, mongoDB, CMS and etc.  </li>
+<li><strong>Flexible on when to invoke the handler</strong>:  before (in worker thread) or after the aggregation (in master/manager thread).</li>
+<li><strong>Flexible Input of target hosts</strong>: Input target hosts from a list, string, JSON Path from local files or a remote URL</li>
+<li><strong>Scalable and fast</strong>, <strong>infinitely scalable</strong> with built-in <strong>Concurrency control</strong>.</li>
+<li><strong>Auto-progress polling</strong> to enable task level concurrency with <strong>Async API</strong> for long jobs and  orchestrations.</li>
+<li><strong>Request template</strong> to handle non-uniform requests.</li>
+<li><strong>Convenient single place handling success and failure cases</strong>. Handle in a single function where you can get the response including the actual response if success; or stacktrace and error details if failures.</li>
+<li><strong>Capacity aware task scheduler</strong> helps you to auto queue up and fire tasks when capacity is insufficient. (e.g. submit consecutively 5 tasks each hitting 100K websites with default concurrency will result in a queue up)</li>
+<li><strong>Fine-grained task progress tracking</strong> helps you track the the progress each individual task status. Of a parallel task on 1000 target hosts, you may check status on any single host task, and percentage progress on how many are completed.</li>
+<li><strong>Fine-grained task cancelation</strong> on whole/individual request level. Of a parallel task on 1000 target hosts, you may cancel a subset of target hosts or cancel the whole parallel task anytime.</li>
+<li><strong>Status-code-aggregation</strong> is provided out of the box.</li>
+<li><strong>Parallel Ping</strong> supports both InetAddress.reachable ICMP (requires root) and Process based ping with retries.  Performance testing shows it is <strong> 67% faster</strong> than best-effort tuned FPing on pinging on 1500 targets. (2.7 vs 4.5 sec)</li>
+<li><strong>Parallel SSH</strong> supports both key and password based login and task cancellation.</li>
+<li><strong>Parallel TCP</strong> supports idle timeout based channel closes.</li>
+</ol>
 <h3 id="get-started">Get Started</h3>
 <h4 id="maven-gradle-import">Maven / Gradle Import</h4>
 <p>Please replace the version with the latest version available.</p>
@@ -207,49 +226,25 @@
 <pre><code class="xml">compile 'io.parallec:parallec-core:0.9.0'
 </code></pre>
 
-<h4 id="minimum-example">Minimum Example</h4>
-<p>In the example below,  simply chanhttp://www.parallec.io/javadocging <strong>prepareHttpGet()</strong> to <strong>prepareSsh()</strong>, <strong>prepareTcp()</strong>, <strong>preparePing()</strong> enables you to conduct parallel SSH/TCP/Ping. Details please refer to <a href="http://www.parallec.io/javadoc/index.html?io/parallec/core/ParallelClient.html">Java Doc</a>.</p>
-<table>
-<thead>
-<tr>
-<th align="center">Function</th>
-<th align="center">Based Upon</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">HTTP</td>
-<td align="center"><a href="https://github.com/AsyncHttpClient/async-http-client">Async HTTP Client</a></td>
-</tr>
-<tr>
-<td align="center">SSH</td>
-<td align="center"><a href="./www.jcraft.com/jsch/">JSch</a></td>
-</tr>
-<tr>
-<td align="center">PING</td>
-<td align="center"><a href="http://download.java.net/jdk7/archive/b123/docs/api/java/net/InetAddress.html#isReachable(int)">JDK net</a> / Process</td>
-</tr>
-<tr>
-<td align="center">TCP</td>
-<td align="center"><a href="./netty.io">Netty</a></td>
-</tr>
-</tbody>
-</table>
+<h4 id="examples">Examples</h4>
+<ul>
+<li><strong>List of Code Examples</strong> please check <a href="https://github.com/ebay/parallec-samples#http">here</a>.</li>
+</ul>
+<p>In the example below,  simply changing <strong>prepareHttpGet()</strong> to <strong>prepareSsh()</strong>, <strong>prepareTcp()</strong>, <strong>preparePing()</strong> enables you to conduct parallel SSH/TCP/Ping. Details please refer to <a href="http://www.parallec.io/javadoc/index.html?io/parallec/core/ParallelClient.html">Java Doc</a>.</p>
 <pre><code class="java">import io.parallec.core.*;
 import java.util.Map;
 
 ParallelClient pc = new ParallelClient(); 
 pc.prepareHttpGet(&quot;&quot;).setTargetHostsFromString(&quot;www.google.com www.ebay.com www.yahoo.com&quot;)
 .execute(new ParallecResponseHandler() {
-@Override
-public void onCompleted(ResponseOnSingleTask res,
+    public void onCompleted(ResponseOnSingleTask res,
         Map&lt;String, Object&gt; responseContext) {
-    System.out.println( res.toString() );  }
+        System.out.println( res.toString() );  }
 });
 pc.releaseExternalResources();
 </code></pre>
 
-<p>Here is an example with response parsing and a little more parameters.</p>
+<p>Here is another example with response parsing and a little more parameters.</p>
 <pre><code class="java">import io.parallec.core.*;
 import java.util.Map;
 
@@ -272,7 +267,7 @@ pc.releaseExternalResources();
 <h2 id="watch-parallec-in-action">Watch Parallec in Action</h2>
 <p><a href="https://www.youtube.com/watch?v=QcavegPMDms" title="Parallec demo - Click to Watch!"><strong>Watch Demo</strong></a>: Parallec Aggregates 100 websites status with 20 lines of code.</p>
 <p><a title="Click to Watch HD version in Youtube" href="https://www.youtube.com/watch?v=QcavegPMDms"><img alt="20 lines parallec to elastic search demo" src="http://www.parallec.io/demos/elastic-web100-v3.gif" /></a></p>
-<h3 id="performance">Performance</h3>
+<h2 id="performance">Performance</h2>
 <p>Note that speed varies based on network speed, API response time, the slowest servers, and concurrency settings.</p>
 <h5 id="http">HTTP</h5>
 <p>We conducted remote task execution API on 3,000 servers with response aggregated to elastic search, visualized within 15 seconds, by writing 25 lines of code.</p>
@@ -280,33 +275,6 @@ pc.releaseExternalResources();
 <h5 id="ping">Ping</h5>
 <p>Parallec 2.7 seconds vs FPing 4.5 seconds on 1500 servers. Parallec is 67% faster than <a href="http://fping.org/">FPing</a> (after best-effort tuning : -i 1 -r 0 v3.12)  of pinging 1500 servers while getting the same ping results.  While FPing consistently crashing (seg fault) when it pings 2000 or more servers,  Parallec pings 8000 servers within 11.8 seconds with breeze.</p>
 <p>As usual, don't rely on these numbers and perform your own benchmarks.</p>
-<h2 id="features">Features<a name="features"></a></h2>
-<p><strong>90%+ Test coverage</strong> assures you always find an example of each of feature.</p>
-<ol>
-<li><strong>Exceedingly intuitive</strong> interface with builder pattern similar to that in <a href="https://github.com/AsyncHttpClient/async-http-client">Async HTTP Client</a>, but handles concurrency behind the scenes.</li>
-<li><strong>Generic response handler with context</strong>. Enable total freedom of processing each response your way. Process and aggregate data <strong>anywhere</strong> to Kafka, Redis, Elastic Search, mongoDB, CMS and etc.  </li>
-<li><strong>Flexible on when to invoke the handler</strong>:  before (in worker thread) or after the aggregation (in master/manager thread).</li>
-<li><strong>Flexible Input of target hosts</strong>: Input target hosts from a list, string, JSON Path from local files or a remote URL</li>
-<li><strong>Scalable and fast</strong>, <strong>infinitely scalable</strong> with built-in <strong>Concurrency control</strong>.</li>
-<li><strong>Auto-progress polling</strong> to enable task level concurrency with <strong>Async API</strong> for long jobs and  orchestrations.</li>
-<li><strong>Request template</strong> to handle non-uniform requests.</li>
-<li><strong>Convenient single place handling success and failure cases</strong>. Handle in a single function where you can get the response including the actual response if success; or stacktrace and error details if failures.</li>
-<li><strong>Capacity aware task scheduler</strong> helps you to auto queue up and fire tasks when capacity is insufficient. (e.g. submit consecutively 5 tasks each hitting 100K websites with default concurrency will result in a queue up)</li>
-<li><strong>Fine-grained task progress tracking</strong> helps you track the the progress each individual task status. Of a parallel task on 1000 target hosts, you may check status on any single host task, and percentage progress on how many are completed.</li>
-<li><strong>Fine-grained task cancelation</strong> on whole/individual request level. Of a parallel task on 1000 target hosts, you may cancel a subset of target hosts or cancel the whole parallel task anytime.</li>
-<li><strong>Status-code-aggregation</strong> is provided out of the box.</li>
-<li><strong>Parallel Ping</strong> supports both InetAddress.reachable ICMP (requires root) and Process based ping with retries.  Performance testing shows it is <strong> 67% faster</strong> than best-effort tuned FPing on pinging on 1500 targets. (2.7 vs 4.5 sec)</li>
-<li><strong>Parallel SSH</strong> supports both key and password based login and task cancellation.</li>
-<li><strong>Parallel TCP</strong> supports idle timeout based channel closes.</li>
-</ol>
-<h4 id="actor-based-concurrency-control">Actor Based Concurrency Control</h4>
-<p>This is similar to the <a href="./www.ebaytechblog.com/2014/03/11/rest-commander-scalable-web-server-management-and-monitoring/#akka">model</a> in REST Commander, except that:</p>
-<ul>
-<li>The user defined response handler can be triggerred in either the manager after aggregation, or in parallel when each operation worker receives the response. </li>
-<li>When handling async APIs, a single task may contains one job submission request, plus <em>1-n</em> progress polling requests.</li>
-<li>Worker now have more protocols such as SSH/Ping/TCP to support.</li>
-</ul>
-<p><img alt="System Design" src="http://www.parallec.io/images/parallec-actors-v2.svg" /></p>
 <h2 id="compare-parallec-vs-rest-commander-vs-threadpoolsasync-client">Compare Parallec vs REST Commander vs ThreadPools+Async Client<a name="compare"></a></h2>
 <table>
 <thead>
@@ -446,6 +414,14 @@ pc.releaseExternalResources();
 </tr>
 </tbody>
 </table>
+<h4 id="actor-based-concurrency-control">Actor Based Concurrency Control</h4>
+<p><img alt="System Design" src="http://www.parallec.io/images/parallec-actors-v2.svg" /></p>
+<p>This is similar to the <a href="./www.ebaytechblog.com/2014/03/11/rest-commander-scalable-web-server-management-and-monitoring/#akka">model</a> in REST Commander, except that:</p>
+<ul>
+<li>The user defined response handler can be triggerred in either the manager after aggregation, or in parallel when each operation worker receives the response. </li>
+<li>When handling async APIs, a single task may contains one job submission request, plus <em>1-n</em> progress polling requests.</li>
+<li>Worker now have more protocols such as SSH/Ping/TCP to support.</li>
+</ul>
 <h2 id="plugins"><a href="https://github.com/eBay/parallec-plugins">Plugins</a></h2>
 <h4 id="ssl-client-auth-plugin"><a href="https://github.com/eBay/parallec-plugins">SSL Client Auth Plugin</a></h4>
 <h2 id="authors">Authors</h2>
@@ -507,5 +483,5 @@ pc.releaseExternalResources();
 
 <!--
 MkDocs version : 0.14.0
-Build Date UTC : 2015-11-02 05:42:06.577674
+Build Date UTC : 2015-11-02 06:10:37.401155
 -->
