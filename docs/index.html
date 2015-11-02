@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Parallec</title>
+  
+
+  <link rel="shortcut icon" href="./img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="./css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="./css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "None";
+  </script>
+  
+  <script src="./js/jquery-2.1.1.min.js"></script>
+  <script src="./js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="./js/highlight.pack.js"></script>
+  <script src="./js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> Parallec</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href=".">Overview and Setup</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#motivation">Motivation</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#use-cases">Use Cases</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#get-started">Get Started</a></li>
+                
+                    <li><a class="toctree-l4" href="#maven-gradle-import">Maven / Gradle Import</a></li>
+                
+                    <li><a class="toctree-l4" href="#minimum-example">Minimum Example</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#watch-parallec-in-action">Watch Parallec in Action</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#features">Features</a></li>
+                
+                    <li><a class="toctree-l4" href="#actor-based-concurrency-control">Actor Based Concurrency Control</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#compare-parallec-vs-rest-commander-vs-threadpoolsasync-client">Compare Parallec vs REST Commander vs ThreadPools+Async Client</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#authors">Authors</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#credits-acknowledgement">Credits &amp; Acknowledgement</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#contributions">Contributions</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#licenses">Licenses</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#plugins">Plugins</a></li>
+                
+                    <li><a class="toctree-l4" href="#ssl-client-auth-plugin">SSL Client Auth Plugin</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="api-overview/">API Overview</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="submit-task/">Generate & Submit Task</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="track-status/">Track Status & Examine Response</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="configurations/">Configurations</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="faq/">FAQ & Future Work</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">Parallec</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Overview and Setup</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><a href="http://www.parallec.io"><img alt="Parallec-logo" src="http://www.parallec.io/images/parallec-logo.png" width="325"></a></p>
+<p><img alt="build status" src="https://img.shields.io/badge/build-info=&gt;-green.svg" /> <a href="https://travis-ci.org/eBay/parallec"><img alt="Build Status" src="https://travis-ci.org/eBay/parallec.svg?branch=master" /></a> <a href="https://codecov.io/github/eBay/parallec"><img alt="Coverage Status" src="https://img.shields.io/codecov/c/github/eBay/parallec.svg" /></a> <a href="https://github.com/eBay/parallec/blob/master/LICENSE"><img alt="Apache V2.0 License" src="http://www.parallec.io/images/apache2.svg" /> </a></p>
+<p><img alt="latest 0.9.x" src="http://img.shields.io/badge/latest_stable-0.9.x=&gt;-green.svg" /> <a href="http://search.maven.org/#artifactdetails|io.parallec|parallec-core|0.9.0|"> <img alt="latest beta  maven central" src="https://maven-badges.herokuapp.com/maven-central/io.parallec/parallec-core/badge.svg?style=flat" /></a> </p>
+<p><a href="http://www.parallec.io/javadoc/index.html?io/parallec/core/ParallelClient.html"><img alt="Javadoc" src="http://www.parallec.io/images/parallec-javadoc-blue.svg" /></a> <a href="http://www.parallec.io/docs/"><img alt="Documentation" src="http://www.parallec.io/images/parallec-documentation-red.svg" /></a> <a href="https://github.com/eBay/parallec-samples"><img alt="Samples" src="http://www.parallec.io/images/parallec-samples-brightgreen.svg" /></a> </p>
+<p>Parallec is a performant parallel async http/ssh/tcp/ping client java library. Scalably aggregate and handle API responses <strong>anyway</strong> and send it <strong>anywhere</strong> by writing <a href="https://www.youtube.com/watch?v=sDIP_Ujxkl4">20 lines</a> of code. Response handler with context enables you conduct scalable API calls, then pass aggregated data anywhere to elastic search, kafka, MongoDB, graphite, memcached, etc. </p>
+<p>Parallec means <strong>Paralle</strong>l <strong>C</strong>lient, and is pronounced as "Para-like". Parallec is built on Akka actors and Async HTTP Client / Netty / Jsch.  The library focuses on HTTP while also enables scalable communication over SSH/Ping/TCP.</p>
+<p><img alt="Workflow Overview" src="http://www.parallec.io/images/parallec-flow.svg" /></p>
+<h4 id="motivation">Motivation</h4>
+<ul>
+<li>Flexible response handling and immediate processing embedded in other applications.</li>
+<li>Handle async APIs with auto progress polling for task level concurrency control.</li>
+<li>Support of other protocols, and <a href="#features">more</a>..</li>
+</ul>
+<p>With the feedbacks, lessons, and improvements from the past year of internal usage and open source of <strong><a href="./www.restcommander.com">REST Commander</a></strong>, we now made the core of REST Commander as an easy to use standalone library. We added <a href="#compare"><strong>15+ new</strong></a> features, rewritten 70%+ of the code, with <a href="https://codecov.io/github/eBay/parallec"><strong>90%+ test coverage</strong></a> for confident usage and contribution. This time we also structure it better so that most internal development can be directly made here.</p>
+<h3 id="use-cases">Use Cases</h3>
+<ol>
+<li>Scalable web server monitoring, management, and configuration push, ping check.</li>
+<li>Asset / server status discovery, remote task execution in agent-less(parallel SSH) or agent based (parallel HTTP/TCP) method.</li>
+<li>Scalable API aggregation and processing with flexible destination with your favorate message queue / storage / alert engine.</li>
+<li>Orchestration and work flows on multiple web servers. </li>
+<li>Parallel different requests with controlled concurrency to a single server. </li>
+</ol>
+<h3 id="get-started">Get Started</h3>
+<h4 id="maven-gradle-import">Maven / Gradle Import</h4>
+<p>Please replace the version with the latest version available.</p>
+<h6 id="maven">Maven</h6>
+<pre><code class="xml">&lt;dependency&gt;
+    &lt;groupId&gt;io.parallec&lt;/groupId&gt;
+    &lt;artifactId&gt;parallec-core&lt;/artifactId&gt;
+    &lt;version&gt;0.9.0&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+
+<h6 id="gradle">Gradle</h6>
+<pre><code class="xml">compile 'io.parallec:parallec-core:0.9.0'
+</code></pre>
+
+<h4 id="minimum-example">Minimum Example</h4>
+<p>In the example below,  simply chanhttp://www.parallec.io/javadocging <strong>prepareHttpGet()</strong> to <strong>prepareSsh()</strong>, <strong>prepareTcp()</strong>, <strong>preparePing()</strong> enables you to conduct parallel SSH/TCP/Ping. Details please refer to <a href="http://www.parallec.io/javadoc/index.html?io/parallec/core/ParallelClient.html">Java Doc</a>.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Function</th>
+<th align="center">Based Upon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">HTTP</td>
+<td align="center"><a href="https://github.com/AsyncHttpClient/async-http-client">Async HTTP Client</a></td>
+</tr>
+<tr>
+<td align="center">SSH</td>
+<td align="center"><a href="./www.jcraft.com/jsch/">JSch</a></td>
+</tr>
+<tr>
+<td align="center">PING</td>
+<td align="center"><a href="http://download.java.net/jdk7/archive/b123/docs/api/java/net/InetAddress.html#isReachable(int)">JDK net</a> / Process</td>
+</tr>
+<tr>
+<td align="center">TCP</td>
+<td align="center"><a href="./netty.io">Netty</a></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="java">import io.parallec.core.*;
+import java.util.Map;
+
+ParallelClient pc = new ParallelClient(); 
+pc.prepareHttpGet(&quot;&quot;).setTargetHostsFromString(&quot;www.google.com www.ebay.com www.yahoo.com&quot;)
+.execute(new ParallecResponseHandler() {
+@Override
+public void onCompleted(ResponseOnSingleTask res,
+        Map&lt;String, Object&gt; responseContext) {
+    System.out.println( res.toString() );  }
+});
+pc.releaseExternalResources();
+</code></pre>
+
+<p>Here is an example with response parsing and a little more parameters.</p>
+<pre><code class="java">import io.parallec.core.*;
+import java.util.Map;
+
+ParallelClient pc= new ParallelClient();
+pc.prepareGet(&quot;/validateInternals.html&quot;)
+    .setConcurrency(1000)
+    .setTargetHostsFromString(&quot;parallec.github.io www.jeffpei.com www.restcommander.com&quot;)
+    .execute(new ParallecResponseHandler() {
+        @Override
+        public void onCompleted(ResponseOnSingleTask res,
+                Map&lt;String, Object&gt; responseContext) {
+            String cpu = new FilterRegex(&quot;.*&lt;td&gt;CPU-Usage-Percent&lt;/td&gt;\\s*&lt;td&gt;(.*?)&lt;/td&gt;.*&quot;)
+            .filter(res.getResponseContent());
+            System.out.println(&quot;cpu:&quot; + cpu + &quot; host: &quot; + res.getHost() );
+        }
+    });
+pc.releaseExternalResources();
+</code></pre>
+
+<h2 id="watch-parallec-in-action">Watch Parallec in Action</h2>
+<p><a href="https://www.youtube.com/watch?v=sDIP_Ujxkl4" title="Parallec demo - Click to Watch!"><strong>Watch Demo</strong></a>: Parallec Aggregates 100 websites status with 20 lines of code in 4 seconds.</p>
+<p>Internally we conducted similar remote API execution with response aggregated, visualized on 3,000 servers within 15 seconds, by writing 25 lines of code. Note that the time includes publishing to elastic search time.</p>
+<p><img alt="20 lines parallec to elastic search demo" src="http://www.parallec.io/demos/elastic-web100-v2.gif" width="700" /></p>
+<h2 id="features">Features<a name="features"></a></h2>
+<p><strong>90%+ Test coverage</strong> assures you always find an example of each of feature.</p>
+<ol>
+<li><strong>Exceedingly intuitive</strong> interface with builder pattern similar to that in <a href="https://github.com/AsyncHttpClient/async-http-client">Async HTTP Client</a>, but handles concurrency behind the scenes.</li>
+<li><strong>Generic response handler with context</strong>. Enable total freedom of processing each response your way. Process and aggregate data <strong>anywhere</strong> to Kafka, Redis, Elastic Search, mongoDB, CMS and etc.  </li>
+<li><strong>Flexible on when to invoke the handler</strong>:  before (in worker thread) or after the aggregation (in master/manager thread).</li>
+<li><strong>Flexible Input of target hosts</strong>: Input target hosts from a list, string, JSON Path from local files or a remote URL</li>
+<li><strong>Scalable and fast</strong>, <strong>infinitely scalable</strong> with built-in <strong>Concurrency control</strong>.</li>
+<li><strong>Auto-progress polling</strong> to enable task level concurrency with <strong>Async API</strong> for long jobs and  orchestrations.</li>
+<li><strong>Request template</strong> to handle non-uniform requests.</li>
+<li><strong>Convenient single place handling success and failure cases</strong>. Handle in a single function where you can get the response including the actual response if success; or stacktrace and error details if failures.</li>
+<li><strong>Capacity aware task scheduler</strong> helps you to auto queue up and fire tasks when capacity is insufficient. (e.g. submit consecutively 5 tasks each hitting 100K websites with default concurrency will result in a queue up)</li>
+<li><strong>Fine-grained task progress tracking</strong> helps you track the the progress each individual task status. Of a parallel task on 1000 target hosts, you may check status on any single host task, and percentage progress on how many are completed.</li>
+<li><strong>Fine-grained task cancelation</strong> on whole/individual request level. Of a parallel task on 1000 target hosts, you may cancel a subset of target hosts or cancel the whole parallel task anytime.</li>
+<li><strong>Status-code-aggregation</strong> is provided out of the box.</li>
+<li><strong>Parallel Ping</strong> supports both InetAddress.reachable ICMP (requires root) and Process based ping with retries.  Performance testing shows it is <strong> 67% faster</strong> than best-effort tuned FPing on pinging on 1500 targets. (2.7 vs 4.5 sec)</li>
+<li><strong>Parallel SSH</strong> supports both key and password based login and task cancellation.</li>
+<li><strong>Parallel TCP</strong> supports idle timeout based channel closes.</li>
+</ol>
+<h4 id="actor-based-concurrency-control">Actor Based Concurrency Control</h4>
+<p>This is similar to the <a href="./www.ebaytechblog.com/2014/03/11/rest-commander-scalable-web-server-management-and-monitoring/#akka">model</a> in REST Commander, except that:</p>
+<ul>
+<li>The user defined response handler can be triggerred in either the manager after aggregation, or in parallel when each operation worker receives the response. </li>
+<li>When handling async APIs, a single task may contains one job submission request, plus <em>1-n</em> progress polling requests.</li>
+<li>Worker now have more protocols such as SSH/Ping/TCP to support.</li>
+</ul>
+<p><img alt="System Design" src="http://www.parallec.io/images/parallec-actors-v2.svg" /></p>
+<h2 id="compare-parallec-vs-rest-commander-vs-threadpoolsasync-client">Compare Parallec vs REST Commander vs ThreadPools+Async Client<a name="compare"></a></h2>
+<table>
+<thead>
+<tr>
+<th align="center">Features</th>
+<th align="center">Parallec</th>
+<th align="center">REST Commander</th>
+<th align="center">ThreadPools w/ Async Client</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Embedded library with intuitive builder pattern interface</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">Ready to use application with GUI wizard based request submission and response aggregation</td>
+<td align="center">No</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">Simple concurrency control not limited by thread size</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">Immediate response handler without waiting all response return</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td align="center">Capacity aware task scheduler and global capacity control</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">Total freedom of response processing and API aggregation: Pluggable and generic response handler and response context</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+<td align="center">No*</td>
+</tr>
+<tr>
+<td align="center">1 line plugin to enable SSL Client auth</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">90% Test Coverage</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">Load target hosts from CMS query, JSON Path, text, list, string from URL/local</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">Task level concurrency and orchestration for Async APIs: auto polling task progress</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">Task level configuration on timeout and replacing Async HTTP Client</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">Async and sync task control with progress polling and cancellation</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">Scalable Parallel SSH with password and key based login</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">Proven scalability and speed on 100,000+ target hosts in Production environment</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">Generic request template with variable replacement for sending different requests to same/different target hosts</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">Scalable Ping with Retries</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">Scalable TCP with idle timeout</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">Flexible handler location at either worker (in parallel) or manager thread</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">Out-of-the-box two-level response aggregation on status code</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">Configurable response log trimming on intervals</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">Cancel task on a list of target hosts</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+<h2 id="authors">Authors</h2>
+<p>Parallec is served to you by <a href="https://www.linkedin.com/in/peiyuant">Yuanteng (Jeff) Pei</a> and <a href="https://www.linkedin.com/pub/teng-song/49/763/713">Teng Song</a>, <a href="https://helpusbuild.ebayc3.com/">Cloud Infrastructure &amp; Platform Services (CIPS)</a> at eBay Inc. </p>
+<h2 id="credits-acknowledgement">Credits &amp; Acknowledgement</h2>
+<ul>
+<li>We thanks our manager <a href="https://www.linkedin.com/pub/andy-santosa/0/230/305">Andy Santosa</a>, project manager <a href="https://www.linkedin.com/pub/marco-rotelli/2/25/54">Marco Rotelli</a>, <a href="https://helpusbuild.ebayc3.com/">Cloud Infrastructure &amp; Platform Services (CIPS)</a> and legal for the big support on this project and the open source effort.</li>
+<li>The auto-progress polling is inspired by <a href="https://github.com/yubin154/lightflow">lightflow</a>.</li>
+<li>We thank <a href="https://github.com/oshoukry/openpojo">openpojo</a> and the author Osman Shoukry for his help on making the openpojo more accessible for us to use in our project.</li>
+<li>We thank <a href="https://github.com/AsyncHttpClient/async-http-client">AsyncHttpClient</a> and Stephane Landelle for guidance.</li>
+</ul>
+<h2 id="contributions">Contributions</h2>
+<p>Any helpful feedback is more than welcome. This includes feature requests, bug reports, pull requests, constructive feedback, and etc.</p>
+<h2 id="licenses">Licenses</h2>
+<p>Code licensed under Apache License v2.0</p>
+<p>© 2015 eBay Software Foundation</p>
+<h2 id="plugins"><a href="https://github.com/eBay/parallec-plugins">Plugins</a></h2>
+<h4 id="ssl-client-auth-plugin"><a href="https://github.com/eBay/parallec-plugins">SSL Client Auth Plugin</a></h4>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="api-overview/" class="btn btn-neutral float-right" title="API Overview"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+        <span style="margin-left: 15px"><a href="api-overview/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 0.14.0
+Build Date UTC : 2015-11-02 04:02:53.778695
+-->
