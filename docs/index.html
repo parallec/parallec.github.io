@@ -58,6 +58,9 @@
                 <li class="toctree-l3"><a href="#get-started">Get Started</a></li>
                 
             
+                <li class="toctree-l3"><a href="#more-readings">More Readings</a></li>
+                
+            
             </ul>
         
     </li>
@@ -134,10 +137,10 @@
 <p><img alt="build status" src="https://img.shields.io/badge/build-info=&gt;-green.svg" /> <a href="https://travis-ci.org/eBay/parallec"><img alt="Build Status" src="https://travis-ci.org/eBay/parallec.svg?branch=master" /></a> <a href="https://codecov.io/github/eBay/parallec"><img alt="Coverage Status" src="https://img.shields.io/codecov/c/github/eBay/parallec.svg" /></a> <a href="https://github.com/eBay/parallec/blob/master/LICENSE"><img alt="Apache V2.0 License" src="http://www.parallec.io/images/apache2.svg" /> </a></p>
 <p><img alt="latest 0.9.x" src="http://img.shields.io/badge/latest_stable-0.9.x=&gt;-green.svg" /> <a href="http://search.maven.org/#artifactdetails|io.parallec|parallec-core|0.9.0|"> <img alt="latest beta  maven central" src="https://maven-badges.herokuapp.com/maven-central/io.parallec/parallec-core/badge.svg?style=flat" /></a> <a href="https://gitter.im/eBay/parallec?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge"><img alt="Gitter" src="https://badges.gitter.im/Join%20Chat.svg" /></a></p>
 <p><a href="http://www.parallec.io/javadoc/index.html?io/parallec/core/ParallelClient.html"><img alt="Javadoc" src="http://www.parallec.io/images/parallec-javadoc-blue.svg" /></a> <a href="http://www.parallec.io/docs/"><img alt="Documentation" src="http://www.parallec.io/images/parallec-documentation-red.svg" /></a> <a href="https://github.com/eBay/parallec-samples"><img alt="Samples" src="http://www.parallec.io/images/parallec-samples-brightgreen.svg" /></a> </p>
-<p>Parallec is a fast parallel async HTTP/SSH/TCP/Ping client java library. Scalably aggregate and handle API responses <strong>anyway</strong> and send it <strong>anywhere</strong> by writing <a href="https://www.youtube.com/watch?v=QcavegPMDms">20 lines</a> of code. Response handler with context enables you conduct scalable API calls, then pass aggregated data anywhere to elastic search, kafka, MongoDB, graphite, memcached, etc. </p>
+<p>Parallec is a fast parallel async HTTP/SSH/TCP/Ping client java library. Scalably aggregate and handle API responses <strong>anyway</strong> and send it <strong>anywhere</strong> by writing <a href="https://www.youtube.com/watch?v=QcavegPMDms">20 lines</a> of code. A special super convenient <strong>response context</strong> let you pass in/out any object when handling the response. Now you can conduct scalable API calls, then pass aggregated data anywhere to elastic search, kafka, MongoDB, graphite, memcached, etc. Parallec means <strong>Paralle</strong>l <strong>C</strong>lient, and is pronounced as "Para-like".</p>
 <p><img alt="Workflow Overview" src="http://www.parallec.io/images/parallec-flow.svg" /></p>
 <h3 id="get-started">Get Started</h3>
-<p>Maven</p>
+<p>Donwload <a href="https://search.maven.org/remote_content?g=io.parallec&amp;a=parallec-core&amp;v=LATEST">the latest JAR</a> or grab from Maven:</p>
 <pre><code class="xml">&lt;dependency&gt;
     &lt;groupId&gt;io.parallec&lt;/groupId&gt;
     &lt;artifactId&gt;parallec-core&lt;/artifactId&gt;
@@ -145,11 +148,12 @@
 &lt;/dependency&gt;
 </code></pre>
 
-<p>Gradle</p>
+<p>or Gradle:</p>
 <pre><code class="xml">compile 'io.parallec:parallec-core:0.9.0'
 </code></pre>
 
-<p>10 Line Example</p>
+<p><strong>6 Line Example</strong></p>
+<p>In the example below,  simply changing <strong>prepareHttpGet()</strong> to <strong>prepareSsh()</strong>, <strong>prepareTcp()</strong>, <strong>preparePing()</strong> enables you to conduct parallel SSH/TCP/Ping. Details please refer to the <a href="http://www.parallec.io/javadoc/index.html?io/parallec/core/ParallelClient.html">Java Doc</a> and <a href="https://github.com/ebay/parallec-samples">Example Code</a>.</p>
 <pre><code class="java">import io.parallec.core.*;
 import java.util.Map;
 
@@ -162,11 +166,50 @@ pc.prepareHttpGet(&quot;&quot;).setTargetHostsFromString(&quot;www.google.com ww
 });
 </code></pre>
 
+<p><strong>20 Line Example</strong></p>
+<p>Now that you have learned the basics, check out how easy to pass an elastic search client using the convenient <strong>response context</strong> to aggregate data anywhere you like.</p>
+<pre><code class="java">ParallelClient pc = new ParallelClient();
+org.elasticsearch.node.Node node = nodeBuilder().node(); //elastic client initialize
+HashMap&lt;String, Object&gt; responseContext = new HashMap&lt;String, Object&gt;();
+responseContext.put(&quot;Client&quot;, node.client());
+pc.prepareHttpGet(&quot;&quot;)
+        .setConcurrency(1000).setResponseContext(responseContext)
+        .setTargetHostsFromLineByLineText(&quot;http://www.parallec.io/userdata/sample_target_hosts_top100_old.txt&quot;, HostsSourceType.URL)
+        .execute( new ParallecResponseHandler() {
+            public void onCompleted(ResponseOnSingleTask res,
+                    Map&lt;String, Object&gt; responseContext) {
+                Map&lt;String, Object&gt; metricMap = new HashMap&lt;String, Object&gt;();
+                metricMap.put(&quot;StatusCode&quot;, res.getStatusCode().replaceAll(&quot; &quot;, &quot;_&quot;));
+                metricMap.put(&quot;LastUpdated&quot;,PcDateUtils.getNowDateTimeStrStandard());
+                metricMap.put(&quot;NodeGroupType&quot;, &quot;Web100&quot;);
+                Client client = (Client) responseContext.get(&quot;Client&quot;);
+                client.prepareIndex(&quot;local&quot;, &quot;parallec&quot;, res.getHost()).setSource(metricMap).execute();
+            }
+        });
+node.close(); pc.releaseExternalResources();
+</code></pre>
+
+<p><strong>Different Requests to the Same Target</strong></p>
+<p>Now see how easy to use the request template to send multiple different requests to the same target. <a href="http://www.parallec.io/docs/submit-task/#apis-on-variable-replacement-for-heterogeneous-requests">Read more..</a></p>
+<pre><code class="java">pc.prepareHttpGet(&quot;/userdata/sample_weather_$ZIP.txt&quot;)
+    .setReplaceVarMapToSingleTargetSingleVar(&quot;ZIP&quot;,
+        Arrays.asList(&quot;95037&quot;,&quot;48824&quot;), &quot;www.parallec.io&quot;)
+    .setResponseContext(responseContext)
+    .execute(new ParallecResponseHandler() {...}...
+
+</code></pre>
+
 <ul>
-<li><a href="https://github.com/ebay/parallec-samples#http"><strong>More Examples</strong></a> on setting context, request templates, send to elastic search, async running, track progress.</li>
+<li><a href="http://www.parallec.io/userdata/sample_weather_48824.txt">http://www.parallec.io/userdata/sample_weather_48824.txt</a></li>
+<li><a href="http://www.parallec.io/userdata/sample_weather_95037.txt">http://www.parallec.io/userdata/sample_weather_95037.txt</a></li>
+</ul>
+<h3 id="more-readings">More Readings</h3>
+<ul>
+<li><a href="https://github.com/ebay/parallec-samples#http"><strong>More Examples</strong></a> on setting context, send to elastic search, async running, auto progress polling, track progress, TCP/SSH/Ping.</li>
 <li><a href="http://www.parallec.io/docs/submit-task/#set-target-hosts"><strong>Set Target Hosts</strong></a> from list, string, line by line text, json path, from local or remote URLs.</li>
 <li><a href="http://www.parallec.io/docs/"><strong>Full Documentation</strong></a></li>
 <li><a href="http://www.parallec.io/javadoc/index.html?io/parallec/core/package-summary.html"><strong>Javadoc</strong></a></li>
+<li><a href="#demos"><strong>Ping Demo</strong></a> Ping 8000 Servers within 11.1 Seconds, performance test vs. <a href="http://fping.org/">FPing</a>.</li>
 </ul>
               
             </div>
@@ -213,5 +256,5 @@ pc.prepareHttpGet(&quot;&quot;).setTargetHostsFromString(&quot;www.google.com ww
 
 <!--
 MkDocs version : 0.14.0
-Build Date UTC : 2015-11-03 02:06:25.316394
+Build Date UTC : 2015-11-04 16:36:19.625967
 -->
