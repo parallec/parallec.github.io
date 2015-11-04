@@ -356,7 +356,7 @@
 
 			<!-- section start -->
 			<!-- ================ -->
-			<section class="light-gray-bg pv-30 padding-bottom-clear clearfix">
+			<section class="light-gray-bg pv-20 padding-bottom-clear clearfix">
 				<div class="container">
 					<h3 class="logo-font text-center text-muted"><span class="text-default">
 						<div class="statcounter">
@@ -425,7 +425,7 @@
 						</div>						
 						<div class="col-md-4 ">
 							<div class="pv-20 ph-20 feature-box-2 boxed shadow object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
-								<span class="icon without-bg"><i class="text-default icon-eye"></i></span>
+								<span class="icon without-bg"><i class="fa text-default fa-cubes"></i></span>
 								<div class="body">
 									<h4 class="title">Feature Packed</h4>
 									<p>Task and host level progress tracking and cancelation. Capacity-aware task scheduler. Flexible handler locations. 
@@ -453,11 +453,11 @@
 								<div class="row">
 									<div class="col-sm-8">
 										<h1 class="title">Try Parallec Now</h1>
-										<p>Monitoring, command execution, discovery with performant polling with HTTP/TCP agent. Or simply parallel SSH in agent-less solutions.</p>
+										<p>Monitoring, command execution, discovery with performant polling from HTTP/TCP agent. Or simply parallel SSH in agent-less solutions. Write 30 lines instead of 1,000 of lines of code.</p>
 									</div>
 									<div class="col-sm-4">
 										<br>
-										<p class="mt-10"><a href="https://github.com/eBay/parallec#get-started" class="btn btn-animated btn-lg btn-gray-transparent ">Get Started<i class="fa fa-github-alt pl-20"></i></a></p>
+										<p class="mt-10"><a href="https://github.com/eBay/parallec#get-started" class="btn btn-animated btn-lg btn-gray-transparent ">10 Lines Example<i class="fa fa-github-alt pl-20"></i></a></p>
 									</div>
 								</div>
 							</div>
@@ -476,15 +476,13 @@
 						<div class="col-md-8 col-md-offset-2">
 							<h2 class="text-center">Send Aggregated API Data <strong>Anywhere</strong></h2>
 							<div class="separator"></div>
-							<p class="large text-center">Generic response hander/conext enables you send aggregated data anywhere, to Kafka, Graphite, Elastic Search, Redis, MongoDb, and etc. Check example here to aggregate 100 website information and send its status code to elastic search and visualized in Kibana in <strong>20 lines of code</strong>.</p>
+							<p class="large text-center">Generic response hander/context let you send aggregated data anywhere, to Kafka, Graphite, Elastic Search, Redis, MongoDb, and etc. Check example here to aggregate 100 website information and send their status code to elastic search and visualized in <strong>20 lines of code</strong>.</p>
 							<br>
 							
 						</div>
 					</div>
 				</div>
 				
-
-
 
 					<div class="container">
 						<div class="row">
@@ -494,10 +492,8 @@ org.elasticsearch.node.Node node = nodeBuilder().node(); //elastic client initia
 HashMap<String, Object> responseContext = new HashMap<String, Object>();
 responseContext.put("Client", node.client());
 pc.prepareHttpGet("")
-        .setConcurrency(1000)
-        .setTargetHostsFromLineByLineText("http://www.parallec.io/userdata/sample_target_hosts_top100_old.txt",
-                 HostsSourceType.URL)
-        .setResponseContext(responseContext)
+        .setConcurrency(1000).setResponseContext(responseContext)
+        .setTargetHostsFromLineByLineText("http://www.parallec.io/userdata/sample_target_hosts_top100_old.txt", HostsSourceType.URL)
         .execute( new ParallecResponseHandler() {
             public void onCompleted(ResponseOnSingleTask res,
                     Map<String, Object> responseContext) {
@@ -577,7 +573,7 @@ node.close(); pc.releaseExternalResources();
 								<h2 class="text-center"> <strong>Flow</strong> Overview</h2>
 								<div class="separator"></div>
 								<p class="large text-center"></p>
-								<p>Our goal is simply to execute a task of firing a list of uniform or non-uniform HTTP/TCP/SSH/PING requests to a list of target hosts, then call the user defined handler to handler each of the responses.</p>
+								<p>Our goal is simply to execute a task of firing a list of uniform or non-uniform HTTP/TCP/SSH/PING requests to a list of target hosts, then call the user defined handler to handle each of the responses.</p>
 								<p><a href="http://www.parallec.io/docs/api-overview/" class="btn btn-default-transparent btn-animated">Read API Overview <i class="fa fa-arrow-right pl-10"></i></a></p>
 							</div>
 						</div>
@@ -663,7 +659,7 @@ node.close(); pc.releaseExternalResources();
 										<p>Parallec is served to you by Yuanteng (Jeff) Pei and Teng Song, at Cloud Infrastructure and Platform Engineerning (CIPS) at eBay. 
 
 										</p>
-										<p>We thanks our manager Andy Santosa, project manager Marco Rotelli, Cloud Infrastructure & Platform Services (CIPS) and legal for the big support on this project and the open source effort.
+										<p>We thank our manager Andy Santosa, project manager Marco Rotelli, Cloud Infrastructure & Platform Services (CIPS) and legal for the big support on this project and the open source effort.
 
 
 										</p>
