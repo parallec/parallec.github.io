@@ -149,15 +149,34 @@
 													</li>													
 
 													<!-- mega-menu start -->													
-													<li class="mega-menu">
-														<a href="http://www.parallec.io/docs/">Documentation</a>
-													
-													</li>
+
+													<li class="dropdown">
+														<a  class="dropdown-toggle" data-toggle="dropdown" href="http://www.parallec.io/docs/">Documentation</a>
+														<ul class="dropdown-menu">
+															<li><a target="_blank" href="http://www.parallec.io/docs/">Overview</a></li>
+															<li><a target="_blank" href="http://www.parallec.io/docs/api-overview/">API Overview</a></li>
+															<li><a target="_blank" href="http://www.parallec.io/docs/submit-task/">Generate & Submit Task</a></li>
+															<li><a target="_blank" href="http://www.parallec.io/docs/track-status/">Track Status & Examine Responses</a></li>
+															<li><a target="_blank" href="http://www.parallec.io/docs/configurations/">Configurations</a></li>
+															
+														</ul>
+													</li>													
 													<!-- mega-menu end -->
 													<!-- mega-menu start -->
-													<li class="mega-menu">
-														<a href="http://www.parallec.io/javadoc/index.html?io/parallec/core/package-summary.html">Javadoc</a>
-													</li>
+
+													<li class="dropdown">
+														<a  class="dropdown-toggle" data-toggle="dropdown" href="http://www.parallec.io/javadoc/index.html?io/parallec/core/package-summary.html">Javadoc</a>
+														<ul class="dropdown-menu">
+															<li><a target="_blank" href="http://www.parallec.io/docs/api-overview/#key-classes-and-notations">Key Classes Overview</a></li>
+															<li><a target="_blank" href="http://www.parallec.io/javadoc/index.html?io/parallec/core/ParallelClient.html">ParallelClient</a></li>
+															<li><a target="_blank" href="http://www.parallec.io/javadoc/index.html?io/parallec/core/ParallelTask.html">ParallelTask</a></li>
+															<li><a target="_blank" href="http://www.parallec.io/javadoc/index.html?io/parallec/core/ParallelTaskBuilder.html">ParallelTaskBuilder</a></li>															
+															<li><a target="_blank" href="http://www.parallec.io/javadoc/index.html?io/parallec/core/ResponseOnSingleTask.html">ResponseOnSingleTask</a></li>
+															<li><a target="_blank" href="http://www.parallec.io/javadoc/index.html?io/parallec/core/task/ParallelTaskManager.html">ParallelTaskManager</a></li>
+															
+															
+														</ul>
+													</li>														
 													<!-- mega-menu end -->
 
 													<!-- mega-menu start -->
@@ -167,9 +186,19 @@
 													<!-- mega-menu end -->
 
 													<!-- mega-menu start -->
-													<li class="mega-menu">
-														<a href="https://github.com/eBay/parallec/">Github <i class="fa fa-github-alt pl-5"></i></a>
-													</li>
+													<li class="dropdown">
+														<a  class="dropdown-toggle" data-toggle="dropdown" href="https://github.com/eBay/parallec">Github <i class="fa fa-github-alt pl-5"></i></a>
+														<ul class="dropdown-menu">
+															<li><a target="_blank" href="https://github.com/eBay/parallec#get-started">Get-Started</a></li>
+															<li><a target="_blank" href="https://github.com/eBay/parallec#features">Features</a></li>
+															<li><a target="_blank" href="https://github.com/eBay/parallec#use-cases">Use Cases</a></li>
+															<li><a target="_blank" href="https://github.com/eBay/parallec#motivation">Motivation</a></li>
+															<li><a target="_blank" href="https://github.com/eBay/parallec#demos">Demos</a></li>
+															<li><a target="_blank" href="https://github.com/eBay/parallec#performance">Performance</a></li>
+															<li><a target="_blank" href="https://github.com/eBay/parallec#compare">Compare</a></li>
+															<li><a target="_blank" href="https://github.com/eBay/parallec#authors">About</a></li>															
+														</ul>
+													</li>														
 													<!-- mega-menu end -->
 
 
@@ -573,7 +602,7 @@ node.close(); pc.releaseExternalResources();
 						<div class="col-md-8 col-md-offset-2">
 							<h2 class="text-center">Why <strong>Parallec</strong> ?</h2>
 							<div class="separator"></div>
-							<p class="large text-center">Compared with java thread pool based solution, parallec gives you worry free concurrency control without constraints on thread size. Compared with single-threaded Node.js solutions, Parallec enables parallel computation-intensive response handling with multiple-cores.</p>
+							<p class="large text-center">Compared with java thread pool based solutions, parallec gives you worry free concurrency control without constraints on thread size. Compared with single-threaded Node.js solutions, Parallec enables parallel computation-intensive response handling with multiple-cores. <a href="https://github.com/eBay/parallec#compare">Read More<i class="pl-5 fa fa-angle-double-right"></i></a></p>
 							<br>
 							
 						</div>
@@ -663,7 +692,7 @@ node.close(); pc.releaseExternalResources();
 										<br>
 										<br>
 
-										<p>Parallec pings 8000 servers in 11.1 seconds. Parallec is 2x speed of best-effort tuned FPing and gets the same accurate result (53 out of 1500 unreachable) on 1500 servers. (2.2 vs 4.5 seconds). <a href="https://github.com/eBay/parallec/wiki/Parallec-pings-8000-servers-in-11.1-seconds">Watch Demo<i class="fa fa-long-arrow-right pl-5"></i></a> </p>
+										<p>Parallec pings 8000 servers in 11.1 seconds. Parallec is <strong>2x speed</strong> of best-effort tuned <a href="fping.org">FPing</a> and gets the same accurate result (53 out of 1500 unreachable) on 1500 servers. (2.2 vs 4.5 seconds). <a href="https://github.com/eBay/parallec/wiki/Parallec-pings-8000-servers-in-11.1-seconds">Watch Demo<i class="fa fa-long-arrow-right pl-5"></i></a> </p>
 										<div class="separator-2"></div>
 									</div>
 								</div>
