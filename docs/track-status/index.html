@@ -135,7 +135,7 @@
                 <p><a href="http://www.parallec.io"><img alt="Parallec-logo" src="http://www.parallec.io/images/parallec-logo.png" width="325"></a></p>
 <h1 id="track-status-examine-responses">Track Status &amp; Examine Responses</h1>
 <h2 id="overview">Overview</h2>
-<p>By default Parallec only stores the response status code, but not store response content string. Because we </p>
+<p>By default Parallec only stores the response status code, but not store response content string. Because (1) we would like to save memory when there is a huge response; (2) user can process response with the response handler in a customized way. However, we give option to turn on saving response content a one line change.</p>
 <h5 id="key-classes">Key Classes</h5>
 <p>The ParallelTaskBuilder<strong>.execute(new ParallecResponseHandler()</strong> returns a <strong>ParallelTask</strong> object, which we could use to track the status of the task. </p>
 <p>Please review the javadoc for the following classes (click to enter).</p>
