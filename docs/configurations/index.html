@@ -163,6 +163,23 @@
 <li>Connection / Request Timeout, as these are parameters from the Async HTTP Client, you will need to either change them in the global config or replace it in </li>
 <li>timeoutInManagerSec and  actorMaxOperationTimeoutSec respectively, controls if the AHC or SSH/TCP/Ping client does not timeout, the actor level timeout in manager (for parallel task) and in the worker. </li>
 </ul>
+<h5 id="example-of-setting-the-ahc-timeout-also-the-actor-timeout">Example of setting the AHC timeout, also the actor timeout</h5>
+<p>Set the global config before the new ParallelClient(). This example also changes some other config parameters.</p>
+<pre><code class="java">ParallecGlobalConfig.ningFastClientConnectionTimeoutMillis = 5000;
+ParallecGlobalConfig.ningFastClientRequestTimeoutMillis = 15000;
+
+ParallelTaskConfig config = new ParallelTaskConfig();
+    config.setActorMaxOperationTimeoutSec(20);
+    config.setAutoSaveLogToLocal(true);
+    config.setSaveResponseToTask(true);
+
+ParallelClient pc = new ParallelClient();
+...
+pc.prepareHttpPost(&quot;/api&quot;)
+    .setConfig(config)
+    ...
+</code></pre>
+
 <h2 id="reduce-verbose-logs">Reduce Verbose Logs</h2>
 <p>If you find the logs are chatty, please check the global config, there are parameters related to how to reduce the interval.  Current logic is always log first the first K% and the last K% percent, for those in the middle, will log based on the interval. You may overwrite these before submit a ParallelTask.</p>
 <p>Also, you may change the log level as a whole.</p>
