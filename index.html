@@ -505,7 +505,7 @@
 									</div>
 									<div class="col-sm-4">
 										<br>
-										<p class="mt-10"><a href="https://github.com/eBay/parallec#get-started" class="btn btn-animated btn-lg btn-gray-transparent ">6 Lines Example<i class="fa fa-github-alt pl-20"></i></a></p>
+										<p class="mt-10"><a href="http://www.parallec.io/docs/#get-started" class="btn btn-animated btn-lg btn-gray-transparent ">6 Lines Example<i class="fa fa-github-alt pl-20"></i></a></p>
 									</div>
 								</div>
 							</div>
@@ -518,14 +518,14 @@
 
 			<!-- section -->
 			<!-- ================ -->
-			<section class="pv-30" id="code-sample">
+			<section class="pv-0" id="code-sample">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2">
 							<h2 class="text-center">Send Aggregated API Data <strong>Anywhere</strong></h2>
 							<div class="separator"></div>
-							<p class="large text-center">A special super convenient <strong>response context</strong> let you pass in/out any object when handling the response. Now you can send aggregated data anywhere, to Kafka, Elastic Search, Redis, MongoDb, and etc. Check example here to aggregate 100 website information and send their status code to elastic search and visualized in <strong>20 lines of code</strong>.</p>
-							<br>
+							<p class="large text-center">A special super convenient <strong>response context</strong> let you pass in/out any object when handling the response. Now you can send aggregated data anywhere, to Kafka, Elastic Search, Redis, MongoDb, and etc, in <strong>20 lines of code</strong>.</p>
+							
 							
 						</div>
 					</div>
@@ -533,8 +533,36 @@
 				
 
 					<div class="container">
+
 						<div class="row">
-							<div class="col-md-8"><a id="code-example"></a>
+							<div class="col-md-5"><a id="code-example"></a>
+							<p class=""><i class="icon-check text-default"></i> <strong>6 Lines Example to Get Started</strong>.</p>
+
+<pre><code class="java">import io.parallec.core.*;
+import java.util.Map;
+
+ParallelClient pc = new ParallelClient(); 
+pc.prepareHttpGet("").setTargetHostsFromString("www.google.com www.ebay.com www.yahoo.com")
+.execute(new ParallecResponseHandler() {
+    public void onCompleted(ResponseOnSingleTask res,
+        Map<String, Object> responseContext) {
+        System.out.println( res.toString() );  }
+});</code></pre>
+
+
+
+							<p class=""><i class="icon-check text-default"></i> <strong>Different Requests to the Same Target</strong>. <a href="http://www.parallec.io/docs/submit-task/#apis-on-variable-replacement-for-heterogeneous-requests">Read more..</a></p>
+
+								<pre><code class="java">pc.prepareHttpGet("/userdata/sample_weather_$ZIP.txt")
+    .setReplaceVarMapToSingleTargetSingleVar("ZIP",
+        Arrays.asList("95037","48824"), "www.parallec.io")
+    .setResponseContext(responseContext)
+    .execute(new ParallecResponseHandler() {...}...</code></pre>
+
+							</div>
+
+							<div class="col-md-7">
+							<p class=""><i class="icon-check text-default"></i> <strong><a href="https://github.com/eBay/parallec-samples/blob/master/sample-apps/src/main/java/io/parallec/sample/app/http/Http100WebAggregateToElasticSearchApp.java" >20 Lines Example</a>: Response Context</strong> Aggregate 100 website status to elastic search.</p>
 								<pre><code class="java">ParallelClient pc = new ParallelClient();
 org.elasticsearch.node.Node node = nodeBuilder().node(); //elastic client initialize
 HashMap<String, Object> responseContext = new HashMap<String, Object>();
@@ -555,19 +583,35 @@ pc.prepareHttpGet("")
         });
 node.close(); pc.releaseExternalResources();
 </code></pre>
+
+
+
+
 							</div>
-							<div class="col-md-4">
-							    <p class="space-top">Complete <a href="https://github.com/eBay/parallec-samples/blob/master/sample-apps/src/main/java/io/parallec/sample/app/http/Http100WebAggregateToElasticSearchApp.java" >Code</a>     More <a href="https://github.com/eBay/parallec-samples#http" >Examples</a></p>
-								<p ><a href="http://search.maven.org/#artifactdetails|io.parallec|parallec-core|0.9.0|" >Maven Import</a></p>
+
+						</div>
+
+
+						<div class="row">
+							<div class="col-md-5">
+
+<p ><i class="icon-check text-default"></i> <a href="http://search.maven.org/#artifactdetails|io.parallec|parallec-core|0.9.0|" ><strong>Maven Import</strong></a></p>
 									<pre><code class="xml">&lt;dependency&gt;
 	&lt;groupId&gt;io.parallec&lt;/groupId&gt;
 	&lt;artifactId&gt;parallec-core&lt;/artifactId&gt;
 	&lt;version&gt;0.9.0&lt;/version&gt;
 &lt;/dependency&gt;</code></pre>
-								<p class="space-top"><a href="http://search.maven.org/#artifactdetails|io.parallec|parallec-core|0.9.0|" >Gradle Import</a></p>
-									<pre><code class="xml">compile 'io.parallec:parallec-core:0.9.0'</code></pre>									
+							</div>
+							<div class="col-md-7">
+
+<p><i class="icon-check text-default"></i> <a href="http://search.maven.org/#artifactdetails|io.parallec|parallec-core|0.9.0|" ><strong>Gradle Import</strong></a></p>
+									<pre><code class="xml">compile 'io.parallec:parallec-core:0.9.0'</code></pre>
+<p><i class="icon-check text-default"></i> <a href="https://github.com/ebay/parallec-samples"><strong>More Examples and Complete Code..</strong></a></p>
 							</div>
 						</div>
+
+
+
 					</div>
 
 			</section>
@@ -687,7 +731,7 @@ node.close(); pc.releaseExternalResources();
 
 								<div class="col-md-4">
 									<div class="footer-content">
-										<h2 class="title">Ping 8000 Servers in 11.1 Seconds</h2>
+										<h2 class="title">Ping 8000 Servers in 12 Seconds</h2>
 										<div class="separator-2"></div>
 										
 										
