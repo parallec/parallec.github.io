@@ -133,13 +133,10 @@
           <div role="main">
             <div class="section">
               
-                <p><a href="http://www.parallec.io"><img alt="Parallec-logo" src="http://www.parallec.io/images/parallec-logo.png" width="325"></a></p>
-<p><img alt="build status" src="https://img.shields.io/badge/build-info=&gt;-green.svg" /> <a href="https://travis-ci.org/eBay/parallec"><img alt="Build Status" src="https://travis-ci.org/eBay/parallec.svg?branch=master" /></a> <a href="https://codecov.io/github/eBay/parallec"><img alt="Coverage Status" src="https://img.shields.io/codecov/c/github/eBay/parallec.svg" /></a> <a href="https://github.com/eBay/parallec/blob/master/LICENSE"><img alt="Apache V2.0 License" src="http://www.parallec.io/images/apache2.svg" /> </a></p>
-<p><img alt="latest 0.9.x" src="http://img.shields.io/badge/latest_stable-0.9.x=&gt;-green.svg" /> <a href="http://search.maven.org/#artifactdetails|io.parallec|parallec-core|0.9.0|"> <img alt="latest beta  maven central" src="https://maven-badges.herokuapp.com/maven-central/io.parallec/parallec-core/badge.svg?style=flat" /></a> <a href="https://gitter.im/eBay/parallec?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge"><img alt="Gitter" src="https://badges.gitter.im/Join%20Chat.svg" /></a></p>
-<p><a href="http://www.parallec.io/javadoc/index.html?io/parallec/core/ParallelClient.html"><img alt="Javadoc" src="http://www.parallec.io/images/parallec-javadoc-blue.svg" /></a> <a href="http://www.parallec.io/docs/"><img alt="Documentation" src="http://www.parallec.io/images/parallec-documentation-red.svg" /></a> <a href="https://github.com/eBay/parallec-samples"><img alt="Samples" src="http://www.parallec.io/images/parallec-samples-brightgreen.svg" /></a> </p>
-<p>[ <a href="https://github.com/eBay/parallec#get-started">Get-Started</a> | <a href="https://github.com/eBay/parallec#features">Features</a> | <a href="https://github.com/eBay/parallec#use-cases">Use Cases</a> | <a href="https://github.com/eBay/parallec#motivation">Motivation</a> | <a href="https://github.com/eBay/parallec#demos">Demos</a> | <a href="https://github.com/eBay/parallec#performance">Performance</a> | <a href="https://github.com/eBay/parallec#compare">Compare</a> | <a href="https://github.com/eBay/parallec#authors">About</a> ]</p>
+                <p><a href="http://www.parallec.io/javadoc/index.html?io/parallec/core/ParallelClient.html"><img alt="Javadoc" src="http://www.parallec.io/images/parallec-javadoc-blue.svg" /></a> <a href="http://www.parallec.io/docs/"><img alt="Documentation" src="http://www.parallec.io/images/parallec-documentation-red.svg" /></a> <a href="https://github.com/eBay/parallec-samples"><img alt="Samples" src="http://www.parallec.io/images/parallec-samples-brightgreen.svg" /></a> <a href="https://github.com/eBay/parallec/blob/master/README-brief-cn.md"><img alt="Chinese" src="http://www.parallec.io/images/parallec-cnbrief-blue.svg" /></a> </p>
+<p>[ <a href="https://github.com/eBay/parallec#get-started">Get-Started</a> | <a href="https://github.com/eBay/parallec#features">Features</a> | <a href="https://github.com/eBay/parallec#use-cases">Use Cases</a> | <a href="https://github.com/eBay/parallec#motivation">Motivation</a> | <a href="https://github.com/eBay/parallec#demos">Demos</a> | <a href="https://github.com/eBay/parallec#performance">Performance</a> | <a href="https://github.com/eBay/parallec#compare">Compare</a> | <a href="https://github.com/eBay/parallec#authors">About</a> | <a href="https://github.com/eBay/parallec/blob/master/README-brief-cn.md">中文介绍</a> ]</p>
 <p>[ <a href="http://www.parallec.io/docs/api-overview/">API Overview</a> | <a href="http://www.parallec.io/docs/submit-task/">Generate &amp; Submit Task</a> | <a href="http://www.parallec.io/docs/track-status/">Track Status &amp; Examine Responses</a> | <a href="http://www.parallec.io/docs/configurations/">Configurations</a> ]</p>
-<p>Parallec is a fast parallel async HTTP/SSH/TCP/Ping client java library. Scalably aggregate and handle API responses <strong>anyway</strong> and send it <strong>anywhere</strong> by writing <a href="https://www.youtube.com/watch?v=QcavegPMDms">20 lines</a> of code. A special super convenient <strong>response context</strong> let you pass in/out any object when handling the response. Now you can conduct scalable API calls, then pass aggregated data anywhere to elastic search, kafka, MongoDB, graphite, memcached, etc. Parallec means <strong>Paralle</strong>l <strong>C</strong>lient, and is pronounced as "Para-like".</p>
+<p>Parallec is a fast parallel async HTTP(S)/SSH/TCP/Ping client java library. Scalably aggregate and handle API responses <strong>anyway</strong> and send it <strong>anywhere</strong> by writing <a href="https://www.youtube.com/watch?v=QcavegPMDms">20 lines</a> of code. A special super convenient <strong>response context</strong> let you pass in/out any object when handling the responses. Now you can conduct scalable API calls, then effortlessly pass aggregated data anywhere to elastic search, kafka, MongoDB, graphite, memcached, etc. Parallec means <strong>Paralle</strong>l <strong>C</strong>lient, and is pronounced as "Para-like".</p>
 <p><img alt="Workflow Overview" src="http://www.parallec.io/images/parallec-flow.svg" /></p>
 <h3 id="get-started">Get Started</h3>
 <p>Donwload <a href="https://search.maven.org/remote_content?g=io.parallec&amp;a=parallec-core&amp;v=LATEST">the latest JAR</a> or grab from Maven:</p>
@@ -192,13 +189,11 @@ node.close(); pc.releaseExternalResources();
 </code></pre>
 
 <p><strong>Different Requests to the Same Target</strong></p>
-<p>Now see how easy to use the request template to send multiple different requests to the same target. <a href="http://www.parallec.io/docs/submit-task/#apis-on-variable-replacement-for-heterogeneous-requests">Read more..</a></p>
+<p>Now see <strong>how easy</strong> to use the request template to send multiple different requests to the same target. <a href="http://www.parallec.io/docs/submit-task/#apis-on-variable-replacement-for-heterogeneous-requests">Read more..</a></p>
 <pre><code class="java">pc.prepareHttpGet(&quot;/userdata/sample_weather_$ZIP.txt&quot;)
     .setReplaceVarMapToSingleTargetSingleVar(&quot;ZIP&quot;,
         Arrays.asList(&quot;95037&quot;,&quot;48824&quot;), &quot;www.parallec.io&quot;)
-    .setResponseContext(responseContext)
     .execute(new ParallecResponseHandler() {...}...
-
 </code></pre>
 
 <ul>
@@ -258,5 +253,5 @@ node.close(); pc.releaseExternalResources();
 
 <!--
 MkDocs version : 0.14.0
-Build Date UTC : 2015-11-06 05:55:05.781860
+Build Date UTC : 2015-11-09 05:56:50.391571
 -->
