@@ -445,7 +445,7 @@
 								<span class="icon without-bg"><i class="text-default icon-loop-alt-outline"></i></span>
 								<div class="body">
 									<h4 class="title">Auto Progress Polling</h4>
-									<p><a href="http://www.parallec.io/docs/submit-task/#async-apis-and-auto-progress-polling">Auto progress polling</a> to handle <strong>async APIs</strong>, enabling task level concurrency control.</p>
+									<p><a href="http://www.parallec.io/docs/submit-task/#async-apis-and-auto-progress-polling">Auto progress polling</a> to handle <strong>async APIs</strong> such as "download packages" or "create compute", enabling task level concurrency control and orchestration.</p>
 									<a href="http://www.parallec.io/docs/submit-task/#async-apis-and-auto-progress-polling">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
 								</div>
 							</div>
@@ -458,7 +458,7 @@
 								<span class="icon without-bg"><i class="fa text-default fa-bolt"></i></span>
 								<div class="body">
 									<h4 class="title">Scalable &amp; Fast</h4>
-									<p>Infinite scalablility with built-in concurrency control. Ping 8,000 Servers in 12 seconds. 8,000 HTTP APIs in 12 seconds. </p>
+									<p>Infinite scalablility with built-in concurrency control. Ping 8,000 servers in 12 seconds. 8,000 HTTP APIs aggregated in 12 seconds. </p>
 									<a href="https://github.com/eBay/parallec/blob/master/README.md#performance">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
 								</div>
 							</div>
@@ -553,12 +553,12 @@ pc.prepareHttpGet("").setTargetHostsFromString("www.google.com www.ebay.com www.
 
 
 
-							<p class=""><i class="icon-check text-default"></i> <strong>Different Requests to the Same Target</strong>. <a href="http://www.parallec.io/docs/submit-task/#apis-on-variable-replacement-for-heterogeneous-requests">Read more..</a></p>
+							<p class=""><i class="icon-check text-default"></i> <strong>Different Requests to the Same Target <a href="https://github.com/eBay/parallec-samples/blob/master/sample-apps/src/main/java/io/parallec/sample/app/http/HttpDiffRequestsSameServerApp.java">Example</a></strong>. <a href="http://www.parallec.io/docs/submit-task/#apis-on-variable-replacement-for-heterogeneous-requests">Read more..</a></p>
 
 								<pre><code class="java">pc.prepareHttpGet("/userdata/sample_weather_$ZIP.txt")
     .setReplaceVarMapToSingleTargetSingleVar("ZIP",
         Arrays.asList("95037","48824"), "www.parallec.io")
-    .setResponseContext(responseContext)
+    .setConcurrency(10)
     .execute(new ParallecResponseHandler() {...}...</code></pre>
 
 							</div>
