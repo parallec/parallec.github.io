@@ -145,7 +145,7 @@ pc.prepareHttpPost(&quot;/executeCmds&quot;)
 .setHttpPort(10050)
 .setConcurrency(1000)
 .setHttpEntityBody( &quot;{  \&quot;cmd\&quot;:\&quot;  df -h; \&quot;}&quot;)
-.setTargetHostsFromString(&quot;server1.host.com, server2.host.com&quot;)
+.setTargetHostsFromString(&quot;server1.host.com server2.host.com&quot;)
 .execute( new ParallecResponseHandler() {
     @Override
     public void onCompleted(ResponseOnSingleTask res,
