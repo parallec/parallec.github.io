@@ -139,9 +139,15 @@
 												<!-- main-menu -->
 												<ul class="nav navbar-nav ">
 													<!-- mega-menu start -->													
-													<li class="mega-menu">
-														<a href="http://www.parallec.io">Home</a>
-													</li>
+													
+													<li class="dropdown">
+														<a  class="dropdown-toggle" data-toggle="dropdown" href="http://www.parallec.io/">Home</a>
+														<ul class="dropdown-menu">
+															<li><a target="_blank" href="#why">Why Parallec</a></li>
+															<li><a target="_blank" href="#motivation">Motivation and About</a></li>
+															
+														</ul>
+													</li>													
 													<!-- mega-menu end -->
 
 													<li class="mega-menu">
@@ -646,13 +652,13 @@ node.close(); pc.releaseExternalResources();
 
 			<!-- section -->
 			<!-- ================ -->
-			<section class="pv-30">
+			<section class="pv-30" id="why">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2">
 							<h2 class="text-center">Why <strong>Parallec</strong> ?</h2>
 							<div class="separator"></div>
-							<p class="large text-center">Compared with java thread pool based solutions, parallec gives you worry free concurrency control without constraints on thread size. Compared with single-threaded Node.js solutions, Parallec enables parallel computation-intensive response handling with multiple-cores. <a href="https://github.com/eBay/parallec/blob/master/README.md#compare">Compare vs. More<i class="pl-5 fa fa-angle-double-right"></i></a></p>
+							<p class="large text-center">Compared with java thread pool based solutions, parallec gives you worry free concurrency control without constraints on thread size. Compared with single-threaded Node.js solutions, Parallec enables parallel computation-intensive response handling with multiple-cores. <a href="https://github.com/eBay/parallec/blob/master/README.md#compare">Read More<i class="pl-5 fa fa-angle-double-right"></i></a></p>
 							
 							
 						</div>
@@ -709,7 +715,7 @@ node.close(); pc.releaseExternalResources();
 				<!-- .footer start -->
 				<!-- ================ -->
 				<div class="footer">
-					<div class="container">
+					<div class="container" id="motivation">
 						<div class="footer-inner">
 							<div class="row">
 								<div class="col-md-4">
