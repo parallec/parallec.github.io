@@ -553,7 +553,7 @@ ParallelClient pc = new ParallelClient();
 pc.prepareHttpGet("").setTargetHostsFromString("www.google.com www.ebay.com www.yahoo.com")
 .execute(new ParallecResponseHandler() {
     public void onCompleted(ResponseOnSingleTask res,
-        Map<String, Object> responseContext) {
+        Map&lt;String, Object&gt; responseContext) {
         System.out.println( res.toString() );  }
 });</code></pre>
 
@@ -573,15 +573,15 @@ pc.prepareHttpGet("").setTargetHostsFromString("www.google.com www.ebay.com www.
 							<p class=""><i class="icon-check text-default"></i> <strong><a href="https://github.com/eBay/parallec-samples/blob/master/sample-apps/src/main/java/io/parallec/sample/app/http/Http100WebAggregateToElasticSearchApp.java" >20 Lines Example</a> using Response Context</strong>: Aggregate 100 website status to elastic search.</p>
 								<pre><code class="java">ParallelClient pc = new ParallelClient();
 org.elasticsearch.node.Node node = nodeBuilder().node(); //elastic client initialize
-HashMap<String, Object> responseContext = new HashMap<String, Object>();
+HashMap&lt;String, Object&gt; responseContext = new HashMap&lt;String, Object&gt;();
 responseContext.put("Client", node.client());
 pc.prepareHttpGet("")
         .setConcurrency(1000).setResponseContext(responseContext)
         .setTargetHostsFromLineByLineText("http://www.parallec.io/userdata/sample_target_hosts_top100_old.txt", HostsSourceType.URL)
         .execute( new ParallecResponseHandler() {
             public void onCompleted(ResponseOnSingleTask res,
-                    Map<String, Object> responseContext) {
-                Map<String, Object> metricMap = new HashMap<String, Object>();
+                    Map&lt;String, Object&gt; responseContext) {
+                Map&lt;String, Object&gt; metricMap = new HashMap&lt;String, Object&gt;();
                 metricMap.put("StatusCode", res.getStatusCode().replaceAll(" ", "_"));
                 metricMap.put("LastUpdated",PcDateUtils.getNowDateTimeStrStandard());
                 metricMap.put("NodeGroupType", "Web100");
