@@ -145,6 +145,7 @@
 														<ul class="dropdown-menu">
 															<li><a href="#why">Why Parallec</a></li>
 															<li><a href="#motivation">Motivation and About</a></li>
+															<li><a href="#motivation">HTTP & Ping Performance</a></li>
 															
 														</ul>
 													</li>													
@@ -423,7 +424,7 @@
 					</h3>
 
 					<p class="text-center">Fast parallel async HTTP/SSH/TCP/Ping client java library based on <a href="http://akka.io">Akka</a>. Aggregate 10,000 APIs and send them anywhere with <a href="https://www.youtube.com/watch?v=QcavegPMDms">20 lines</a> of code.
-					<br> Ping 8000 servers in <a href="https://github.com/eBay/parallec/wiki/Parallec-pings-8000-servers-in-11.1-seconds">11 seconds</a>. Parallec means <strong>Paralle</strong>l <strong>C</strong>lient (pronounced as "para-like"). Open Source from eBay Cloud.</p>
+					<br> <a href="https://github.com/eBay/parallec/wiki/Parallec-pings-8000-servers-in-11.1-seconds">Ping</a> or <a href="https://github.com/eBay/parallec/wiki/Parallec-Aggregates-HTTP-Responses-from-8000-Servers">HTTP calls</a> 8000 servers with responses aggregated in <a href="https://github.com/eBay/parallec/wiki/Parallec-Demos">12 seconds</a>. Parallec means <strong>Paralle</strong>l <strong>C</strong>lient (pronounced as "para-like"). Open Source from eBay Cloud.</p>
 					<br>
 					<div class="row">
 						<div class="col-md-4 ">
@@ -464,7 +465,7 @@
 								<span class="icon without-bg"><i class="fa text-default fa-bolt"></i></span>
 								<div class="body">
 									<h4 class="title">Scalable &amp; Fast</h4>
-									<p>Infinite scalablility with built-in concurrency control. Ping 8,000 servers in 12 seconds. 8,000 HTTP APIs aggregated in 13 seconds. </p>
+									<p>Infinite scalablility with built-in concurrency control. Ping 8,000 servers in 12 seconds. 8,000 HTTP APIs aggregated in <a href="https://github.com/eBay/parallec/wiki/Parallec-Aggregates-HTTP-Responses-from-8000-Servers">12 seconds</a>. </p>
 									<a href="https://github.com/eBay/parallec/blob/master/README.md#performance">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
 								</div>
 							</div>
@@ -718,9 +719,10 @@ node.close(); pc.releaseExternalResources();
 					<div class="container" id="motivation">
 						<div class="footer-inner">
 							<div class="row">
-								<div class="col-md-4">
+								<div class="col-md-3">
 									<div class="footer-content">
-										<div class="logo-footer"><img id="logo-footer" src="images/logo_parallec.png" alt=""></div>
+										<h2 class="title">Motivation</h2>
+										<div class="separator-2"></div>
 										<p> With the feedbacks, lessons, and improvements from the past year of internal usage and open source of <a href="http://www.restcommander.com"><strong>REST Commander</strong></a>, we now made the core of REST Commander as an easy to use standalone library. We added <a href="https://github.com/eBay/parallec/blob/master/README.md#compare"><strong>15+ new features</strong></a>, rewritten 70%+ of the code, with <a href="https://codecov.io/github/eBay/parallec"><strong>90%+ test coverage</strong></a> for confident usage and contribution. This time we also structure it better so that most internal development can be directly made here.
 
 										</p>
@@ -731,14 +733,29 @@ node.close(); pc.releaseExternalResources();
 
 												<li><a target="_blank" href="http://www.ebaytechblog.com/2014/03/11/rest-commander-scalable-web-server-management-and-monitoring">eBay Tech Blog</a></li>			
 												<li><a target="_blank" href="http://www.restcommander.com/">REST Commander</a></li>
-
+												
 												
 											</ul>
 										</nav>
 									</div>
 								</div>
 
-								<div class="col-md-4">
+								<div class="col-md-3">
+									<div class="footer-content">
+										<h2 class="title">HTTP GET 8000 Servers in <a href="https://github.com/eBay/parallec/wiki/Parallec-Aggregates-HTTP-Responses-from-8000-Servers">12 Seconds</a></h2>
+										<div class="separator-2"></div>
+										
+										
+										<canvas class="graph bar" id="http-bars" ></canvas>
+										<br>
+										<br>
+
+										<p>Parallec performs uniform HTTPS GET calls to 8000 servers with response aggregated to memory in 12 seconds, to elastic search in 15.6 seconds. Parallec default max concurrency of 1000-2500 is <strong>5-12x </strong> than that of <a href="https://github.com/typhoeus/typhoeus">Typhoeus</a>, a parallel HTTP client. <a href="https://github.com/eBay/parallec/wiki/Parallec-Aggregates-HTTP-Responses-from-8000-Servers"><strong>Watch HTTP Demo</strong><i class="fa fa-long-arrow-right pl-5"></i></a> </p>
+										
+									</div>
+								</div>
+
+								<div class="col-md-3">
 									<div class="footer-content">
 										<h2 class="title">Ping 8000 Servers in <a href="https://github.com/eBay/parallec/wiki/Parallec-pings-8000-servers-in-11.1-seconds">12 Seconds</a></h2>
 										<div class="separator-2"></div>
@@ -748,12 +765,12 @@ node.close(); pc.releaseExternalResources();
 										<br>
 										<br>
 
-										<p>Parallec pings 8000 servers in 11.1 seconds. Parallec is <strong>2x speed</strong> of best-effort tuned <a href="http://fping.org">FPing</a> and gets the same accurate result (53 out of 1500 unreachable) on 1500 servers. (2.2 vs 4.5 seconds). <a href="https://github.com/eBay/parallec/wiki/Parallec-pings-8000-servers-in-11.1-seconds"><strong>Watch Ping Demo</strong><i class="fa fa-long-arrow-right pl-5"></i></a> </p>
-										<div class="separator-2"></div>
+										<p>Parallec pings 8000 servers in 11.1 seconds. Parallec is <strong>2x speed</strong> of best-effort tuned <a href="http://fping.org">FPing</a> and gets the same accurate result (53 out of 1500 unreachable) on 1500 servers. (2.2 vs 4.5 seconds). 20 lines to make a jar file to run anywhere. <a href="https://github.com/eBay/parallec/wiki/Parallec-pings-8000-servers-in-11.1-seconds"><strong>Watch Ping Demo</strong><i class="fa fa-long-arrow-right pl-5"></i></a> </p>
+										
 									</div>
 								</div>
 
-								<div class="col-md-4">
+								<div class="col-md-3">
 									<div class="footer-content">
 										<h2 class="title">About Parallec</h2>
 										<div class="separator-2"></div>
@@ -775,6 +792,7 @@ node.close(); pc.releaseExternalResources();
 												<li><a target="_blank" href="https://github.com/eBay/parallec/">Parallec @ Github</a></li>
 												<li><a target="_blank" href="http://helpusbuild.ebayc3.com/">Join eBay Cloud</a></li>
 												<li><a target="_blank" href="https://careers.ebayinc.com/join-our-team/start-your-search/">eBay Career</a></li>
+
 
 												
 											</ul>
