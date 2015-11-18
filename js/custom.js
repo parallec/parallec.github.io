@@ -37,7 +37,7 @@
 				  	  ]
 					};
 			var barChartDataHttp = {
-				    labels: ["HTTP on 8K Servers"],
+				    labels: ["HTTP 8K Servers"],
 				    datasets: [
 				        {
 				            label: "To Mem",
