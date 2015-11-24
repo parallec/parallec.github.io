@@ -137,7 +137,7 @@
               
                 <p><a href="http://www.parallec.io"><img alt="Parallec-logo" src="http://www.parallec.io/images/parallec-logo.png" width="325"></a></p>
 <h1 id="api-overview">API Overview</h1>
-<p>Our goal is simply to execute a task of firing a list of uniform or non-uniform HTTP(S)/TCP/SSH/PING requests to a list of target hosts, then call the user defined handler to handler each of the responses.  We define such a task with its metadata as <strong>ParallelTask</strong>.</p>
+<p>Our goal is simply to execute a task of firing a list of uniform or non-uniform HTTP(S)/TCP/SSH/PING requests to a list of target hosts (or a single target host), then call the user defined handler to handle each of the responses.  We define such a task with its metadata as <strong>ParallelTask</strong>.</p>
 <p>Let's review the sample example again for a HTTP POST call to 2 target hosts. <strong>ParallelClient</strong> is the starting point of parallec, which returns a <strong>ParallelTaskBuilder</strong> by a <strong>prepare*()</strong> function (e.g.  prepareHttpGet(), prepareHttpPost(),  prepareSsh(),  preparePing()  etc). The ParallelTaskBuilder is to build a specific <strong>ParallelTask</strong> with certain metadata.</p>
 <pre><code class="java">ParallelClient pc = new ParallelClient(); 
 pc.prepareHttpPost(&quot;/executeCmds&quot;)
