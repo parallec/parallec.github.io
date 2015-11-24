@@ -62,6 +62,9 @@
                 <li class="toctree-l3"><a href="#more-readings">More Readings</a></li>
                 
             
+                <li class="toctree-l3"><a href="#use-cases">Use Cases</a></li>
+                
+            
             </ul>
         
     </li>
@@ -135,22 +138,27 @@
             <div class="section">
               
                 <p><a href="http://www.parallec.io"><img alt="Parallec-logo" src="http://www.parallec.io/images/parallec-logo.png" width="325"></a></p>
+<p><img alt="build status" src="https://img.shields.io/badge/build-info=&gt;-green.svg" /> <a href="https://travis-ci.org/eBay/parallec"><img alt="Build Status" src="https://travis-ci.org/eBay/parallec.svg?branch=master" /></a> <a href="https://codecov.io/github/eBay/parallec"><img alt="Coverage Status" src="https://img.shields.io/codecov/c/github/eBay/parallec.svg" /></a> <a href="https://github.com/eBay/parallec/blob/master/LICENSE"><img alt="Apache V2.0 License" src="http://www.parallec.io/images/apache2.svg" /> </a></p>
+<p><img alt="latest 0.9.x" src="http://img.shields.io/badge/latest_stable-0.9.x=&gt;-green.svg" /> <a href="http://search.maven.org/#artifactdetails|io.parallec|parallec-core|0.9.1|"> <img alt="latest beta  maven central" src="https://maven-badges.herokuapp.com/maven-central/io.parallec/parallec-core/badge.svg?style=flat" /></a> <a href="https://gitter.im/eBay/parallec?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge"><img alt="Gitter" src="https://badges.gitter.im/Join%20Chat.svg" /></a></p>
 <p><a href="http://www.parallec.io/javadoc/index.html?io/parallec/core/ParallelClient.html"><img alt="Javadoc" src="http://www.parallec.io/images/parallec-javadoc-blue.svg" /></a> <a href="http://www.parallec.io/docs/"><img alt="Documentation" src="http://www.parallec.io/images/parallec-documentation-red.svg" /></a> <a href="https://github.com/eBay/parallec-samples"><img alt="Samples" src="http://www.parallec.io/images/parallec-samples-brightgreen.svg" /></a> <a href="https://github.com/eBay/parallec/blob/master/README-brief-cn.md"><img alt="Chinese" src="http://www.parallec.io/images/parallec-cnbrief-blue.svg" /></a> </p>
-<p>[ <a href="https://github.com/eBay/parallec#get-started">Get-Started</a> | <a href="https://github.com/eBay/parallec#features">Features</a> | <a href="https://github.com/eBay/parallec#use-cases">Use Cases</a> | <a href="https://github.com/eBay/parallec#motivation">Motivation</a> | <a href="https://github.com/eBay/parallec#demos">Demos</a> | <a href="https://github.com/eBay/parallec#performance">Performance</a> | <a href="https://github.com/eBay/parallec#compare">Compare</a> | <a href="https://github.com/eBay/parallec#authors">About</a> | <a href="https://github.com/eBay/parallec/blob/master/README-brief-cn.md">中文介绍</a> ]</p>
+<p>[ <a href="https://github.com/eBay/parallec/blob/master/README.md#get-started">Get-Started</a> | <a href="https://github.com/eBay/parallec/blob/master/README.md#features">Features</a> | <a href="https://github.com/eBay/parallec/blob/master/README.md#use-cases">Use Cases</a> | <a href="https://github.com/eBay/parallec/blob/master/README.md#motivation">Motivation</a> | <a href="https://github.com/eBay/parallec/blob/master/README.md#demos">Demos</a> | <a href="https://github.com/eBay/parallec/blob/master/README.md#performance">Performance</a> | <a href="https://github.com/eBay/parallec/blob/master/README.md#compare">Compare</a> | <a href="https://github.com/eBay/parallec/blob/master/README.md#contributors">Contributors</a> | <a href="https://github.com/eBay/parallec/blob/master/README.md#authors">About</a> | <a href="http://www.parallec.io/blog/">News</a> | <a href="https://github.com/eBay/parallec/blob/master/README-brief-cn.md">中文介绍</a> ]</p>
 <p>[ <a href="http://www.parallec.io/docs/api-overview/">API Overview</a> | <a href="http://www.parallec.io/docs/submit-task/">Generate &amp; Submit Task</a> | <a href="http://www.parallec.io/docs/track-status/">Track Status &amp; Examine Responses</a> | <a href="http://www.parallec.io/docs/configurations/">Configurations</a> ]</p>
-<p>Parallec is a fast parallel async HTTP(S)/SSH/TCP/Ping client java library. Scalably aggregate and handle API responses <strong>anyway</strong> and send it <strong>anywhere</strong> by writing <a href="https://www.youtube.com/watch?v=QcavegPMDms">20 lines</a> of code. A special super convenient <strong>response context</strong> let you pass in/out any object when handling the responses. Now you can conduct scalable API calls, then effortlessly pass aggregated data anywhere to elastic search, kafka, MongoDB, graphite, memcached, etc. Parallec means <strong>Paralle</strong>l <strong>C</strong>lient, and is pronounced as "Para-like".</p>
+<p>Noticed by <a href="https://twitter.com/jboner/status/663618652063813632">the Author of Akka</a> &amp; Featured in [ <a href="http://www.cakesolutions.net/teamblogs/this-week-in-scala-16/11/2015">This Week in #Scala</a> | <a href="http://www.oschina.net/p/parallec">OSChina</a> ]</p>
+<p>Parallec is a fast parallel async HTTP(S)/SSH/TCP/Ping client java library based on <a href="http://akka.io">Akka</a>. Scalably aggregate and handle API responses <strong>anyway</strong> and send it <strong>anywhere</strong> by writing <a href="https://www.youtube.com/watch?v=QcavegPMDms">20 lines</a> of code. A special super convenient <strong>response context</strong> let you pass in/out any object when handling the responses. Now you can conduct scalable API calls, then effortlessly pass aggregated data anywhere to elastic search, kafka, MongoDB, graphite, memcached, etc. Parallec means  <strong>Paralle</strong>l <strong>C</strong>lient, and is pronounced as "Para-like".</p>
+<p><strong><a href="https://github.com/eBay/parallec/wiki/Parallec-Aggregates-HTTP-Responses-from-8000-Servers">Watch Demo</a></strong>: <strong>8,000</strong> web server HTTP response aggregation to memory in <strong>12</strong> seconds / to ElasticSearch in <strong>16</strong> seconds.</p>
 <p><img alt="Workflow Overview" src="http://www.parallec.io/images/parallec-flow.svg" /></p>
 <h3 id="get-started">Get Started</h3>
 <p>Donwload <a href="https://search.maven.org/remote_content?g=io.parallec&amp;a=parallec-core&amp;v=LATEST">the latest JAR</a> or grab from Maven:</p>
 <pre><code class="xml">&lt;dependency&gt;
     &lt;groupId&gt;io.parallec&lt;/groupId&gt;
     &lt;artifactId&gt;parallec-core&lt;/artifactId&gt;
-    &lt;version&gt;0.9.0&lt;/version&gt;
+    &lt;version&gt;0.9.1&lt;/version&gt;
 &lt;/dependency&gt;
 </code></pre>
 
+<p>Snapshots of the development version are available in <a href="https://oss.sonatype.org/content/repositories/snapshots/io/parallec/parallec-core/">Sonatype's <code>snapshots</code> repository</a>.</p>
 <p>or Gradle:</p>
-<pre><code class="xml">compile 'io.parallec:parallec-core:0.9.0'
+<pre><code class="xml">compile 'io.parallec:parallec-core:0.9.1'
 </code></pre>
 
 <p><strong>6 Line Example</strong></p>
@@ -191,7 +199,7 @@ node.close(); pc.releaseExternalResources();
 </code></pre>
 
 <p><strong>Different Requests to the Same Target</strong></p>
-<p>Now see <strong>how easy</strong> to use the request template to send multiple different requests to the same target. <a href="http://www.parallec.io/docs/submit-task/#apis-on-variable-replacement-for-heterogeneous-requests">Read more..</a></p>
+<p>Now see <strong>how easy</strong> to use the request template to send multiple different requests to the same target. Variable replacement is allowed in post body, url and headers. <a href="http://www.parallec.io/docs/submit-task/#apis-on-variable-replacement-for-heterogeneous-requests">Read more..</a></p>
 <pre><code class="java">pc.prepareHttpGet(&quot;/userdata/sample_weather_$ZIP.txt&quot;)
     .setReplaceVarMapToSingleTargetSingleVar(&quot;ZIP&quot;,
         Arrays.asList(&quot;95037&quot;,&quot;48824&quot;), &quot;www.parallec.io&quot;)
@@ -204,12 +212,21 @@ node.close(); pc.releaseExternalResources();
 </ul>
 <h3 id="more-readings">More Readings</h3>
 <ul>
-<li><a href="https://github.com/ebay/parallec-samples#http"><strong>More Examples</strong></a> on setting context, send to elastic search, async running, auto progress polling, track progress, TCP/SSH/Ping.</li>
+<li><a href="https://github.com/ebay/parallec-samples#http"><strong>More Examples</strong></a> on setting context, send to Elastic Search / Kafka, async running, auto progress polling, track progress, TCP/SSH/Ping.</li>
 <li><a href="http://www.parallec.io/docs/submit-task/#set-target-hosts"><strong>Set Target Hosts</strong></a> from list, string, line by line text, json path, from local or remote URLs.</li>
 <li><a href="http://www.parallec.io/docs/"><strong>Full Documentation</strong></a></li>
 <li><a href="http://www.parallec.io/javadoc/index.html?io/parallec/core/package-summary.html"><strong>Javadoc</strong></a></li>
-<li><a href="#demos"><strong>Ping Demo</strong></a> Ping 8000 Servers within 11.1 Seconds, performance test vs. <a href="http://fping.org/">FPing</a>.</li>
+<li><a href="https://github.com/eBay/parallec/blob/master/README.md#demos"><strong>Ping Demo</strong></a> Ping 8000 Servers within 11.1 Seconds, performance test vs. <a href="http://fping.org/">FPing</a>.</li>
 </ul>
+<h3 id="use-cases">Use Cases</h3>
+<ol>
+<li>Scalable web server monitoring, management, and configuration push, ping check.</li>
+<li>Asset / server status discovery, remote task execution in agent-less(parallel SSH) or agent based (parallel HTTP/TCP) method.</li>
+<li>Scalable API aggregation and processing with flexible destination with your favorate message queue / storage / alert engine.</li>
+<li>Orchestration and work flows on multiple web servers. </li>
+<li>Parallel different requests with controlled concurrency to a single server: as a parallec client for REST API enabled Database / Web Server CRUD operations. Variable replacement allowed in post body, url and headers.</li>
+<li>Load testing with request template. </li>
+</ol>
               
             </div>
           </div>
@@ -255,5 +272,5 @@ node.close(); pc.releaseExternalResources();
 
 <!--
 MkDocs version : 0.14.0
-Build Date UTC : 2015-11-23 16:53:08.683673
+Build Date UTC : 2015-11-24 20:13:14.161781
 -->
