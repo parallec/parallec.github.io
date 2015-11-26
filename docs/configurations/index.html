@@ -182,6 +182,7 @@ pc.prepareHttpPost(&quot;/api&quot;)
 </code></pre>
 
 <h2 id="reduce-verbose-logs">Reduce Verbose Logs</h2>
+<h4 id="reduce-response-logs">Reduce response logs</h4>
 <p>If you find the logs are chatty, please check the global config, there are parameters related to how to reduce the interval.  Current logic is always log first the first K% and the last K% percent, for those in the middle, will log based on the interval. You may overwrite these before submit a ParallelTask.</p>
 <p>Also, you may change the log level as a whole.</p>
 <pre><code class="java">    /** The log response interval. */
@@ -198,6 +199,15 @@ pc.prepareHttpPost(&quot;/api&quot;)
 
     /** The log all response if total less than. */
     public static int logAllResponseIfTotalLessThan = 11;
+</code></pre>
+
+<h4 id="overwrite-logback-settings">Overwrite logback settings</h4>
+<p>Parallec uses slf4j + logback for logging. And it is output is controlled by <a href="https://github.com/eBay/parallec/blob/master/src/main/resources/logback.xml">logback.xml</a>.</p>
+<p>Please simply put your own logback.xml to src/main/resources in your app. This will overwrite the setting definted in parallec. you may remove <code>&lt;appender-ref ref="STDOUT" /&gt;</code> (or change anyway you like) ; this will overwrite (We tested with parallec.sample-applications; it remove most parallec logs to console)</p>
+<pre><code class="xml">  &lt;root level=&quot;INFO&quot;&gt;          
+    &lt;appender-ref ref=&quot;STDOUT&quot; /&gt;
+    &lt;appender-ref ref=&quot;FILE&quot; /&gt;
+  &lt;/root&gt;  
 </code></pre>
               
             </div>
