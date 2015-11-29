@@ -1,0 +1,33 @@
+{
+    "status": {
+        "code": "200",
+        "msg": "ok",
+        "stackTrace": null
+    },
+    "dbTimeCost": 93,
+    "totalTimeCost": 101,
+    "hasmore": false,
+    "count": 4,
+    "result": [
+        {
+            "_type": "EC2Instance",
+            "_oid": "aaaaaa",
+            "label": "parallec.github.io"
+        },
+        {
+            "_type": "EC2Instance",
+            "_oid": "bbbbb",
+            "label": "www.jeffpei.com"
+        },
+        {
+            "_type": "EC2Instance",
+            "_oid": "cccccc",
+            "label": "www.restcommander.com"
+        },
+        {
+            "_type": "EC2Instance",
+            "_oid": "dddddd",
+            "label": "www.restcommander.com"
+        }        
+    ]
+}
