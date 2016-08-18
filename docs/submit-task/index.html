@@ -3,7 +3,10 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
   
   <title>Generate & Submit Task - Parallec</title>
   
@@ -21,12 +24,15 @@
   <script>
     // Current page data
     var mkdocs_page_name = "Generate & Submit Task";
+    var mkdocs_page_input_path = "submit-task.md";
+    var mkdocs_page_url = "/submit-task/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
   <script src="../js/theme.js"></script> 
+  <script src="../custom.js"></script>
 
   
 </head>
@@ -84,6 +90,8 @@
                     <li><a class="toctree-l4" href="#apis-on-ping">APIs on PING</a></li>
                 
                     <li><a class="toctree-l4" href="#apis-on-tcp">APIs on TCP</a></li>
+                
+                    <li><a class="toctree-l4" href="#apis-on-udp">APIs on UDP</a></li>
                 
                     <li><a class="toctree-l4" href="#apis-on-variable-replacement-for-heterogeneous-requests">APIs on Variable Replacement for Heterogeneous Requests</a></li>
                 
@@ -150,7 +158,8 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="generate-submit-task">Generate &amp; Submit Task</h1>
+                <p><a href="http://www.parallec.io"><img alt="Parallec-logo" src="http://www.parallec.io/images/parallec-logo.png" width="325"></a></p>
+<h1 id="generate-submit-task">Generate &amp; Submit Task</h1>
 <p>The most efficient way to use Parallec is by reviewing the <a href="https://github.com/ebay/parallec-samples">example codes</a>.</p>
 <p>Also review the <a href="http://www.parallec.io/javadoc/index.html?io/parallec/core/ParallelTaskBuilder.html"><img alt="javadoc" src="http://www.parallec.io/images/parallec-javadoc-blue.svg" /></a></p>
 <h2 id="apis-on-request-generation">APIs on Request Generation</h2>
@@ -524,6 +533,38 @@ public static int urlConnectionReadTimeoutMillis = 15000;
 </tr>
 </tbody>
 </table>
+<h2 id="apis-on-udp">APIs on UDP</h2>
+<p>The APIs to set TCP properties are named with <strong>setUdp*()</strong>.</p>
+<table>
+<thead>
+<tr>
+<th align="center">API</th>
+<th align="center">Required</th>
+<th align="center">Default If Not Set</th>
+<th align="center">Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">prepareUdp()</td>
+<td align="center">Required</td>
+<td align="center">n/a</td>
+<td align="center">Starting point of UDP request.  Set protocol as "UDP" and the request string.</td>
+</tr>
+<tr>
+<td align="center">setUdpPort()</td>
+<td align="center">Required</td>
+<td align="center">n/a</td>
+<td align="center">A port number server listens on.</td>
+</tr>
+<tr>
+<td align="center">setUdp IdleTimeoutSec()</td>
+<td align="center">Optional</td>
+<td align="center">use default 2</td>
+<td align="center">The idle timeout for the channel to close the connection. Similar to a read timeout.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="apis-on-variable-replacement-for-heterogeneous-requests">APIs on Variable Replacement for Heterogeneous Requests<a name="diffreqs"></a></h2>
 <p>When the protocol is HTTP, the request's entity body, request URL, and also the header part can be putting as a <strong>template</strong> with variable denoted with <strong>"$VariableName"</strong>.</p>
 <p>More complex replacement samples are available in the <a href="https://github.com/eBay/parallec/blob/master/src/test/java/io/parallec/core/main/http/request/template/">test cases</a>. </p>
@@ -621,7 +662,7 @@ HttpPollerProcessor httpPollerProcessor = new HttpPollerProcessor(
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../track-status/" class="btn btn-neutral float-right" title="Track Status & Examine Response"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../track-status/" class="btn btn-neutral float-right" title="Track Status & Examine Response">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../api-overview/" class="btn btn-neutral" title="API Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>

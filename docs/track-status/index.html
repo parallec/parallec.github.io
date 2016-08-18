@@ -3,7 +3,10 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
   
   <title>Track Status & Examine Response - Parallec</title>
   
@@ -21,12 +24,15 @@
   <script>
     // Current page data
     var mkdocs_page_name = "Track Status & Examine Response";
+    var mkdocs_page_input_path = "track-status.md";
+    var mkdocs_page_url = "/track-status/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
   <script src="../js/theme.js"></script> 
+  <script src="../custom.js"></script>
 
   
 </head>
@@ -132,9 +138,10 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="track-status-examine-responses">Track Status &amp; Examine Responses</h1>
+                <p><a href="http://www.parallec.io"><img alt="Parallec-logo" src="http://www.parallec.io/images/parallec-logo.png" width="325"></a></p>
+<h1 id="track-status-examine-responses">Track Status &amp; Examine Responses</h1>
 <h2 id="overview">Overview</h2>
-<p>By default Parallec only stores the response status code, but not store response content string. Because we </p>
+<p>By default Parallec only stores the response status code, but not store response content string. Because (1) we would like to save memory when there is a huge response; (2) user can process response with the response handler in a customized way. However, we give option to turn on saving response content a one line change.</p>
 <h5 id="key-classes">Key Classes</h5>
 <p>The ParallelTaskBuilder<strong>.execute(new ParallecResponseHandler()</strong> returns a <strong>ParallelTask</strong> object, which we could use to track the status of the task. </p>
 <p>Please review the javadoc for the following classes (click to enter).</p>
@@ -349,7 +356,7 @@ MonitorProvider.getInstance().getJVMMemoryUsage();
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../configurations/" class="btn btn-neutral float-right" title="Configurations"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../configurations/" class="btn btn-neutral float-right" title="Configurations">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../submit-task/" class="btn btn-neutral" title="Generate & Submit Task"><span class="icon icon-circle-arrow-left"></span> Previous</a>

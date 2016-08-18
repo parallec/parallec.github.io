@@ -3,7 +3,10 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
   
   <title>API Overview - Parallec</title>
   
@@ -21,12 +24,15 @@
   <script>
     // Current page data
     var mkdocs_page_name = "API Overview";
+    var mkdocs_page_input_path = "api-overview.md";
+    var mkdocs_page_url = "/api-overview/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
   <script src="../js/theme.js"></script> 
+  <script src="../custom.js"></script>
 
   
 </head>
@@ -134,16 +140,17 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="api-overview">API Overview</h1>
-<p>Our goal is simply to execute a task of firing a list of uniform or non-uniform HTTP/TCP/SSH/PING requests to a list of target hosts, then call the user defined handler to handler each of the responses.  We define such a task with its metadata as <strong>ParallelTask</strong>.</p>
+                <p><a href="http://www.parallec.io"><img alt="Parallec-logo" src="http://www.parallec.io/images/parallec-logo.png" width="325"></a></p>
+<h1 id="api-overview">API Overview</h1>
+<p>Our goal is simply to execute a task of firing a list of uniform or non-uniform HTTP(S)/TCP/UDP/SSH/PING requests to a list of target hosts (or a single target host), then call the user defined handler to handle each of the responses.  We define such a task with its metadata as <strong>ParallelTask</strong>.</p>
 <p>Let's review the sample example again for a HTTP POST call to 2 target hosts. <strong>ParallelClient</strong> is the starting point of parallec, which returns a <strong>ParallelTaskBuilder</strong> by a <strong>prepare*()</strong> function (e.g.  prepareHttpGet(), prepareHttpPost(),  prepareSsh(),  preparePing()  etc). The ParallelTaskBuilder is to build a specific <strong>ParallelTask</strong> with certain metadata.</p>
 <pre><code class="java">ParallelClient pc = new ParallelClient(); 
 pc.prepareHttpPost(&quot;/executeCmds&quot;)
-.setHeaders(new ParallecHeader().addPair(&quot;content-type&quot;, &quot;application/json&quot;))
-.setPort(10050)
+.setHttpHeaders(new ParallecHeader().addPair(&quot;content-type&quot;, &quot;application/json&quot;))
+.setHttpPort(10050)
 .setConcurrency(1000)
-.setBody( &quot;{  \&quot;cmd\&quot;:\&quot;  df -h; \&quot;}&quot;)
-.setTargetHostsFromString(&quot;server1.host.com, server2.host.com&quot;)
+.setHttpEntityBody( &quot;{  \&quot;cmd\&quot;:\&quot;  df -h; \&quot;}&quot;)
+.setTargetHostsFromString(&quot;server1.host.com server2.host.com&quot;)
 .execute( new ParallecResponseHandler() {
     @Override
     public void onCompleted(ResponseOnSingleTask res,
@@ -191,6 +198,10 @@ pc.releaseExternalResources();
 </tr>
 <tr>
 <td align="center">TCP</td>
+<td align="center"><a href="../netty.io">Netty</a></td>
+</tr>
+<tr>
+<td align="center">UDP</td>
 <td align="center"><a href="../netty.io">Netty</a></td>
 </tr>
 </tbody>
@@ -246,7 +257,7 @@ pc.releaseExternalResources();
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../submit-task/" class="btn btn-neutral float-right" title="Generate & Submit Task"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../submit-task/" class="btn btn-neutral float-right" title="Generate & Submit Task">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href=".." class="btn btn-neutral" title="Overview and Setup"><span class="icon icon-circle-arrow-left"></span> Previous</a>
