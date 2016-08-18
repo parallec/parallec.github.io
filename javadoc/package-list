@@ -8,6 +8,7 @@ io.parallec.core.bean
 io.parallec.core.bean.ping
 io.parallec.core.bean.ssh
 io.parallec.core.bean.tcp
+io.parallec.core.bean.udp
 io.parallec.core.commander.workflow
 io.parallec.core.commander.workflow.ping
 io.parallec.core.commander.workflow.ssh

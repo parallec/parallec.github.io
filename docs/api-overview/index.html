@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API Overview - Parallec</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "API Overview";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Parallec</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Overview and Setup</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">API Overview</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#api-overview">API Overview</a></li>
+                
+                    <li><a class="toctree-l4" href="#supported-protocols">Supported Protocols</a></li>
+                
+                    <li><a class="toctree-l4" href="#key-classes-and-notations">Key Classes and Notations</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../submit-task/">Generate & Submit Task</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../track-status/">Track Status & Examine Response</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../configurations/">Configurations</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../faq/">FAQ & Future Work</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Parallec</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>API Overview</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="api-overview">API Overview</h1>
+<p>Our goal is simply to execute a task of firing a list of uniform or non-uniform HTTP/TCP/SSH/PING requests to a list of target hosts, then call the user defined handler to handler each of the responses.  We define such a task with its metadata as <strong>ParallelTask</strong>.</p>
+<p>Let's review the sample example again for a HTTP POST call to 2 target hosts. <strong>ParallelClient</strong> is the starting point of parallec, which returns a <strong>ParallelTaskBuilder</strong> by a <strong>prepare*()</strong> function (e.g.  prepareHttpGet(), prepareHttpPost(),  prepareSsh(),  preparePing()  etc). The ParallelTaskBuilder is to build a specific <strong>ParallelTask</strong> with certain metadata.</p>
+<pre><code class="java">ParallelClient pc = new ParallelClient(); 
+pc.prepareHttpPost(&quot;/executeCmds&quot;)
+.setHeaders(new ParallecHeader().addPair(&quot;content-type&quot;, &quot;application/json&quot;))
+.setPort(10050)
+.setConcurrency(1000)
+.setBody( &quot;{  \&quot;cmd\&quot;:\&quot;  df -h; \&quot;}&quot;)
+.setTargetHostsFromString(&quot;server1.host.com, server2.host.com&quot;)
+.execute( new ParallecResponseHandler() {
+    @Override
+    public void onCompleted(ResponseOnSingleTask res,
+            Map&lt;String, Object&gt; responseContext) {
+        System.out.println( res.toString() );  }
+});
+pc.releaseExternalResources();
+</code></pre>
+
+<p>Please first review these <strong><a href="#keyclasses">Key Classes</a></strong> below.We will then break down on each component of a "ParallelTask", and give more details of the functions in "ParallelTaskBuilder".</p>
+<p>These APIs can be generally categorized by the following:</p>
+<ul>
+<li>Generate and submit Parallel Task (with class <strong>ParallelClient &amp; ParallelTaskBuilder</strong>) : <ol>
+<li>APIs to set general ParalleTask attributes such as concurrency, whether to enable scheduler, whether to save response/logs, configs to set actor timeouts.  </li>
+<li>APIs to set protocol specific metadata on each protocol of HTTP/TCP/SSH/Ping. Such as Http port, URL, entity body. These parameters are used by the loaded async http client.</li>
+<li>APIs to set target hosts from different sources.</li>
+<li>APIs relate to the response handling: set response handler with context, when to call the handler, whether to save responses, and whether to auto write task execution logs. </li>
+</ol>
+</li>
+<li>Track ParallelTask status/results and examine responses (with class <strong>ParallelTask</strong>)</li>
+</ul>
+<p>The above two part are listed as separate sections in this documentation.</p>
+<p>Please also review <a href="https://github.com/eBay/parallec-samples">Parallec Samples</a> of list of independent examples to get single executable for parallel executions on each protocol.</p>
+<h4 id="supported-protocols">Supported Protocols</h4>
+<p>Parallec currently supports the following protocols.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Function</th>
+<th align="center">Based Upon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">HTTP</td>
+<td align="center"><a href="https://github.com/AsyncHttpClient/async-http-client">Async HTTP Client</a></td>
+</tr>
+<tr>
+<td align="center">SSH</td>
+<td align="center"><a href="../www.jcraft.com/jsch/">JSch</a></td>
+</tr>
+<tr>
+<td align="center">PING</td>
+<td align="center"><a href="http://download.java.net/jdk7/archive/b123/docs/api/java/net/InetAddress.html#isReachable(int)">JDK net</a> / Process</td>
+</tr>
+<tr>
+<td align="center">TCP</td>
+<td align="center"><a href="../netty.io">Netty</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="key-classes-and-notations">Key Classes and Notations<a name="keyclasses"></a></h2>
+<p>First let's review some key class in parallec. You may click the link to read more on their javadocs</p>
+<table>
+<thead>
+<tr>
+<th align="center">Notations</th>
+<th align="center">Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong><a href="http://www.parallec.io/javadoc/index.html?io/parallec/core/ParallelClient.html">ParallelClient</a></strong></td>
+<td align="center">This is the starting point of parallec, which returns a ParallelTaskBuilder after a <strong>prepare*()</strong> function. The ParallelTaskBuilder is to build a specific ParallelTask</td>
+</tr>
+<tr>
+<td align="center"><strong><a href="http://www.parallec.io/javadoc/index.html?io/parallec/core/ParallelTask.html">ParallelTask</a></strong></td>
+<td align="center">The key class represents a onetime execution on multiple requests. It contains all the task and request metadata, target hosts, configs, and the responses.</td>
+</tr>
+<tr>
+<td align="center"><strong><a href="http://www.parallec.io/javadoc/index.html?io/parallec/core/ParallelTaskBuilder.html">ParallelTaskBuilder</a></strong></td>
+<td align="center">The key builder to build the parallel task and then execute it after the validation process. During the validation, certain missing parameters will use the default values.</td>
+</tr>
+<tr>
+<td align="center"><a href="http://www.parallec.io/javadoc/index.html?io/parallec/core/task/ParallelTaskManager.html">ParallelTaskManager</a></td>
+<td align="center">The class to manage the current running tasks and wait queue (Singleton). generateUpdateExecuteTask() is the key function to execute a ParallelTask.</td>
+</tr>
+<tr>
+<td align="center">TaskRequest</td>
+<td align="center">This is the request sent to the operation worker. It contains the actual request that has been replaced if there are variables defined.</td>
+</tr>
+<tr>
+<td align="center">SingleTask</td>
+<td align="center">It represents request(s) and response(s) on a single target host. For async API. there could be 1 task submission request followed by <em>n</em> polling requests sent out.</td>
+</tr>
+<tr>
+<td align="center"><strong><a href="http://www.parallec.io/javadoc/index.html?io/parallec/core/ResponseOnSingleTask.html">ResponseOnSingleTask</a></strong></td>
+<td align="center">The final response on a single task. This class also contains the request metadata, and the each polling response. It is available in the response handler's onComplete() function</td>
+</tr>
+<tr>
+<td align="center">ResponseOnSingleRequest</td>
+<td align="center">A single response for each HTTP/SSH/TCP/Ping request.</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../submit-task/" class="btn btn-neutral float-right" title="Generate & Submit Task"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Overview and Setup"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../submit-task/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
