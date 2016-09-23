@@ -186,6 +186,17 @@ pc.prepareHttpPost(&quot;/api&quot;)
     ...
 </code></pre>
 
+<h4 id="long-running-jobs">Long Running Jobs</h4>
+<p>Do you have your <a href="https://github.com/eBay/parallec/issues/42">long job completed without all the target responses returned</a>? It could be the whole task has been prematurely cancelled due to the timeout. </p>
+<p>By Default the whole parallel task timeouts at <a href="https://github.com/eBay/parallec/blob/master/src/main/java/io/parallec/core/config/ParallelTaskConfigDefault.java#L32">10 minutes</a>. If you have a long polling jobs that could run longer than that, please adjust it accordingly. </p>
+<pre><code class="java">public ParallelTaskConfig genParallelTaskConfig() {
+    ParallelTaskConfig config = new ParallelTaskConfig();
+    config.setTimeoutInManagerSec(900);
+    config.setTimeoutAskManagerSec(910);
+returnconfig;
+}
+</code></pre>
+
 <h2 id="reduce-verbose-logs">Reduce Verbose Logs</h2>
 <h4 id="reduce-response-logs">Reduce response logs</h4>
 <p>If you find the logs are chatty, please check the global config, there are parameters related to how to reduce the interval.  Current logic is always log first the first K% and the last K% percent, for those in the middle, will log based on the interval. You may overwrite these before submit a ParallelTask.</p>
