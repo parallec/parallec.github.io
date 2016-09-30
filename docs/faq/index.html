@@ -179,6 +179,8 @@
 </ol>
 <p><strong>Q: Do you have plans to update the versions of Async Http Client?</strong></p>
 <p><strong>A:</strong> We have not been able to use AHC version 1.9.x due to an issue with client auth.  Last year with some performance testing, we found more CPU usage and less speed after upgrade from AHC 1.65 to AHC 1.8.14 . We need to do more performance testing before the upgrade.</p>
+<p>Updated 09/2016:</p>
+<p><strong>Parallec with async-http-client 2.x</strong> The version with more up-to-date <code>async-http-client</code> (currently using AHC version <code>2.0.15</code>) is <code>0.20.0-SNAPSHOT</code>. This version has passed comprehensive unit tests but has not been used yet in production. This version <strong>requires JDK8</strong> due to AHC 2.x and can be used with the parallec-plugins with the same version <code>0.20.0-SNAPSHOT</code>, details please check <a href="https://github.com/eBay/parallec/issues/37">#37</a>.</p>
 <p><strong>Q: The logs are too chatty/verbose, can I disable or reduce them?</strong></p>
 <p><strong>A:</strong> Please refer to the configuration section on "Reduce Verbose Logs"</p>
 <p><strong>Q: The task ends prematurely around 10 minutes with response count less than original?</strong></p>
