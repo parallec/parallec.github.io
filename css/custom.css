@@ -10,8 +10,12 @@ File Description: Place here your custom CSS styles
 
 
 
-
-
+a#testimonial-ebay {
+  display: block;
+  position: relative;
+  top: -70px;
+  visibility: hidden;
+}
 
 .statcounter img {
   display: inline;
@@ -64,5 +68,3 @@ File Description: Place here your custom CSS styles
 .hn-share-button-wrapper:hover {
     -webkit-filter: none;
 }
-
-
