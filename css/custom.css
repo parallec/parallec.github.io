@@ -49,7 +49,7 @@ a#testimonial-ebay {
 
 #github_stars {
     position: fixed;
-    bottom: 50px;
+    bottom: 55px;
     left: 20px;
     width: 100px;
     -webkit-filter: grayscale(1) contrast(1.3);
