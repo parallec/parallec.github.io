@@ -143,7 +143,7 @@
                 <p><a href="http://www.parallec.io"><img alt="Parallec-logo" src="http://www.parallec.io/images/parallec-logo.png" width="325"></a></p>
 <h1 id="api-overview">API Overview</h1>
 <p>Our goal is simply to execute a task of firing a list of uniform or non-uniform HTTP(S)/TCP/UDP/SSH/PING requests to a list of target hosts (or a single target host), then call the user defined handler to handle each of the responses.  We define such a task with its metadata as <strong>ParallelTask</strong>.</p>
-<p>Let's review the sample example again for a HTTP POST call to 2 target hosts. <strong>ParallelClient</strong> is the starting point of parallec, which returns a <strong>ParallelTaskBuilder</strong> by a <strong>prepare*()</strong> function (e.g.  prepareHttpGet(), prepareHttpPost(),  prepareSsh(),  preparePing()  etc). The ParallelTaskBuilder is to build a specific <strong>ParallelTask</strong> with certain metadata.</p>
+<p>Let's review the sample example again for a HTTP POST call to 2 target hosts. <strong>ParallelClient</strong> is the starting point of parallec, which returns a <strong>ParallelTaskBuilder</strong> by a <strong>prepare*()</strong> function (e.g.  prepareHttpGet(), prepareHttpPost(),  prepareSsh(),  preparePing()  etc). The ParallelTaskBuilder is to build a specific <strong>ParallelTask</strong> with certain metadata. Note that the <code>pc.releaseExternalResources()</code> does not need to be called if using Parallec.io in a web server. It only needs until </p>
 <pre><code class="java">ParallelClient pc = new ParallelClient(); 
 pc.prepareHttpPost(&quot;/executeCmds&quot;)
 .setHttpHeaders(new ParallecHeader().addPair(&quot;content-type&quot;, &quot;application/json&quot;))
@@ -160,7 +160,7 @@ pc.prepareHttpPost(&quot;/executeCmds&quot;)
 pc.releaseExternalResources();
 </code></pre>
 
-<p>Please first review these <strong><a href="#keyclasses">Key Classes</a></strong> below.We will then break down on each component of a "ParallelTask", and give more details of the functions in "ParallelTaskBuilder".</p>
+<p>Please first review these <strong><a href="#keyclasses">Key Classes</a></strong> below. We then break down on each component of a "ParallelTask", and give more details of the functions in "ParallelTaskBuilder".</p>
 <p>These APIs can be generally categorized by the following:</p>
 <ul>
 <li>Generate and submit Parallel Task (with class <strong>ParallelClient &amp; ParallelTaskBuilder</strong>) : <ol>
@@ -250,6 +250,8 @@ pc.releaseExternalResources();
 </tr>
 </tbody>
 </table>
+<h4 id="when-to-release-resources">When to Release Resources</h4>
+<p>As mentioned in the <a href="http://www.parallec.io/javadoc/io/parallec/core/ParallelClient.html#releaseExternalResources--">javadoc</a> These resources (e.g. akka system, async http client store, thread pool for SSH/TCP) are Singleton.  There is <a href="https://github.com/eBay/parallec/issues/53">no need</a> to call the <code>releaseExternalResources()</code> until you stop using Parallec. If you are on some web server (such as Tomcat) and runs parallec jobs as cron jobs, you will not need to call this line at all.  We have several production application that runs as web server. We do not call it in our app. The actor system and the threadpools are live so that it will keep reusing the same one.  If you have called <code>releaseExternalResources()</code>, the next time it will need to be reinitialized. </p>
               
             </div>
           </div>
