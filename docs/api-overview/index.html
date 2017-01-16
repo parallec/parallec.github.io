@@ -72,6 +72,8 @@
                 
                     <li><a class="toctree-l4" href="#supported-protocols">Supported Protocols</a></li>
                 
+                    <li><a class="toctree-l4" href="#when-to-release-resources">When to Release Resources</a></li>
+                
                     <li><a class="toctree-l4" href="#key-classes-and-notations">Key Classes and Notations</a></li>
                 
             
@@ -206,6 +208,8 @@ pc.releaseExternalResources();
 </tr>
 </tbody>
 </table>
+<h2 id="when-to-release-resources">When to Release Resources</h2>
+<p>As mentioned in the <a href="http://www.parallec.io/javadoc/io/parallec/core/ParallelClient.html#releaseExternalResources--">javadoc</a>, these resources (e.g. akka system, async http client store, thread pool for SSH/TCP) are Singleton.  There is <a href="https://github.com/eBay/parallec/issues/53">no need</a> to call the <code>releaseExternalResources()</code> until you stop using Parallec. If you are on some web server (such as Tomcat) and runs parallec jobs as cron jobs, you will not need to call this line at all.  We have several production application that runs as web server. We do not call it in our app. The actor system and the threadpools are live so that it will keep reusing the same one.  If you have called <code>releaseExternalResources()</code>, the next time it will need to be reinitialized. </p>
 <h2 id="key-classes-and-notations">Key Classes and Notations<a name="keyclasses"></a></h2>
 <p>First let's review some key class in parallec. You may click the link to read more on their javadocs</p>
 <table>
@@ -250,8 +254,6 @@ pc.releaseExternalResources();
 </tr>
 </tbody>
 </table>
-<h4 id="when-to-release-resources">When to Release Resources</h4>
-<p>As mentioned in the <a href="http://www.parallec.io/javadoc/io/parallec/core/ParallelClient.html#releaseExternalResources--">javadoc</a> These resources (e.g. akka system, async http client store, thread pool for SSH/TCP) are Singleton.  There is <a href="https://github.com/eBay/parallec/issues/53">no need</a> to call the <code>releaseExternalResources()</code> until you stop using Parallec. If you are on some web server (such as Tomcat) and runs parallec jobs as cron jobs, you will not need to call this line at all.  We have several production application that runs as web server. We do not call it in our app. The actor system and the threadpools are live so that it will keep reusing the same one.  If you have called <code>releaseExternalResources()</code>, the next time it will need to be reinitialized. </p>
               
             </div>
           </div>
